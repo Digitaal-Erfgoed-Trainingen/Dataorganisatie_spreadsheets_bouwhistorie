@@ -1,20 +1,16 @@
 ---
-title: "Using Markdown"
+title: "Datums in spreadsheets"
 teaching: 10 # teaching time in minutes
 exercises: 2 # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
-
-- How do you write a lesson using Markdown and `{sandpaper}`?
-
+- FIXME
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with The Carpentries Workbench
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
-
+- Datums op een consistente en correcte wijze vastleggen en beheren
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introduction
