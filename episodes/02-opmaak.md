@@ -1,9 +1,8 @@
 ---
-
 title: Data opmaken in spreadsheets
 teaching: 15
 exercises: 20
--------------
+---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 * Herkennen en voorkomen van veelvoorkomende opmaakfouten in spreadsheets
@@ -73,7 +72,7 @@ We gaan een rommelige dataset bekijken en beschrijven hoe we deze zouden opschon
 2. Open de data in een spreadsheetprogramma (Excel of iets vergelijkbaars). Je ziet dat er 3 tabbladen zijn.
 3. Jij bent nu verantwoordelijk voor dit project en wilt de data gaan analyseren.
 Bespreek samen met degene naast je wat er mis is met deze spreadsheet. 
-Bespreek ook welke stappen nodig zijn om de tabbladen `voor 1900` en `na 1900` en `Datum onbekend` op te schonen en alle data samen te voegen in één spreadsheet.
+Bespreek ook welke stappen nodig zijn om de tabbladen `voor 1900`, `na 1900` en `Datum onbekend` op te schonen en alle data samen te voegen in één spreadsheet.
 
 **Belangrijk:** vergeet ons eerste advies niet: maak een nieuw bestand of tabblad voor de opgeschoonde data. Wijzig nooit de oorspronkelijke (ruwe) data.
 
@@ -103,7 +102,7 @@ Met betrekking tot het op de juiste manier organiseren van data in spreadsheets:
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 * Wijzig nooit je ruwe data. Maak altijd een kopie voordat je wijzigingen aanbrengt.
-* Organiseer je data zo dat jij-zelf-in-de-toekomst, anderen, en een computer de data kan begrijpen.
+* Organiseer je data zo dat jijzelf-in-de-toekomst, anderen, en een computer de data kan begrijpen.
 * Voorkom veelvoorkomende fouten in data opmaak.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
