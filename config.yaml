@@ -43,6 +43,9 @@ branch: 'main'
 # Who to contact if there are any issues
 contact: 'm.dekleijn@cultureelerfgoed.nl'
 
+# Language
+lang: 'nl'
+
 # Navigation ------------------------------------------------
 #
 # Use the following menu items to specify the order of
