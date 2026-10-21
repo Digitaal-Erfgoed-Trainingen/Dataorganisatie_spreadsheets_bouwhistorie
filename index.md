@@ -12,21 +12,6 @@ Aan de hand van bovengenoemde casuïstiek wordt in deze module een dataset over 
 ## Doelgroep
 De cursus is bedoeld als basiscursus voor iedereen die met tabulaire data werkt. De casuïstiek is weliswaar glas voor bouwhistorie, maar de lessen zijn ook bruikbaar voor andere (sub) domeinen. 
 
-## Leerdoelen 
-In deze les leer je hoe je over dataorganisatie kunt nadenken en welke werkwijzen je kunt toepassen om data efficiënter te verwerken. Met deze aanpak kun je bestaande data beter structureren en nieuwe dataverzameling beter plannen, zodat je achteraf minder tijd kwijt bent aan het opschonen en organiseren van data. 
-In deze les leer je *niet* hoe je data analyseert met spreadsheets.
-
-Na afloop van deze module kan de deelnemer:
-
-* Veelvoorkomende opmaakfouten herkennen en voorkomen; 
-* Datums op een consistente en correcte wijze vastleggen en beheren; 
-* Eenvoudige kwaliteitscontroles uitvoeren en basisbewerkingen op tabulaire gegevens toepassen; 
-* Gegevens op een correcte wijze exporteren voor gebruik in andere applicaties en analyseomgevingen.
-* Identificeren wanneer het gebruiken of opstellen van referentielijsten/ thesauri van toegevoegde waarde is bij een dataset;
-* Hoe het beste omgegaan kan worden met het documenteren van afbeeldingen. 
-
-
-
 :::::::::::::::::::::::::::::::::::::::::: prereq
 
 **Voor deze lessen is geen voorkennis vereist.**
