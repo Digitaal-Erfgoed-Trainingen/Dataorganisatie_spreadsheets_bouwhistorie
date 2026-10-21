@@ -9,13 +9,12 @@ naar je computer op een handige plek.
 
 ### Over de data
 
-De data die we gebruiken in deze les is een onderwijsversie van de 'glas in gebouwen' dataset van de Rijksdienst voor Curtureel Erfgoed. 
-De data voor deze les vormt een subset van de echte data en die voor deze les bewust is 'verrommeld'. 
-(De echte data ziet er gelukkig een stuk georganiseerder uit!)
+De dataset die in deze module wordt gebruikt is gebasseerd op een door de Rijksdienst voor het Cultureel Erfgoed ontwikkelde inventarisatie van *glas in gebouwen*. Het is een subset van de echte data en is voor deze module bewust 'verrommeld'. 
+(De echte data ziet er gelukkig een stuk georganiseerder uit!). De dataset is dan ook puur bedoeld voor trainingsdoeleinden. 
 
 De data is beschikbaar onder een CC-BY-licentie en mogen dus met bronvermelding opnieuw worden gebruikt.
 
-> FIXME citatie toevoegen
+> Van der Stok, Glas in gebouwen. 
 
 
 
