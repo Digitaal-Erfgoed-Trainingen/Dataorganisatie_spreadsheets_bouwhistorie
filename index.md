@@ -1,8 +1,7 @@
 ---
 site: sandpaper::sandpaper_site
 ---
-De module *Dataorganisatie in spreadsheets voor bouwhistorie* is ontwikkeld voor erfgoedvrijwilligers en professionals die systematisch gegevens verzamelen over bouwhistorische objecten. Goede dataorganisatie vormt de basis van elk project. Een spreadsheet (Excel-bestand) is een goede manier om data op te slaan. Meestal beginnen we data te organiseren op een manier die voor ons als mensen prettig is om mee te werken. Computers vereisen echter dat data op een specifieke manier wordt georganiseerd. Om tools te kunnen gebruiken die analyses en zoeken efficiënter maken, 
-zoals programmeertalen (zoals R of Python), of een database, moeten we onze data structureren op een manier die computers kunnen verwerken. 
+De module *Dataorganisatie in spreadsheets voor bouwhistorie* is ontwikkeld voor erfgoedvrijwilligers en professionals die systematisch gegevens verzamelen over bouwhistorische objecten. Goede dataorganisatie vormt de basis van elk project. Een spreadsheet (Excel-bestand) is een goede manier om data op te slaan. Meestal beginnen we data te organiseren op een manier die voor ons als mensen prettig is om mee te werken. Computers vereisen echter dat data op een specifieke manier wordt georganiseerd. Om tools te kunnen gebruiken die analyses en zoeken efficiënter maken, zoals programmeertalen (bijvoorbeeld R of Python), of een database, moeten we onze data structureren op een manier die computers kunnen verwerken. 
 
 ## Historisch glas
 
