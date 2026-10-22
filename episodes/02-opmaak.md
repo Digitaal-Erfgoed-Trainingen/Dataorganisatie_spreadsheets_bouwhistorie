@@ -33,7 +33,7 @@ Je kunt spreadsheets op verschillende manieren inrichten, maar sommige keuzes ku
 
 ## Opmerking
 
-De beste indeling en opmaak voor dataverzameling kunnen verschillen van die voor data-analyse. 
+Wat de beste indeling en opmaak is voor dataverzameling kan verschillen van de beste voor data-analyse. 
 Hetzelfde geldt voor de gebruikte software en interfaces. 
 Het is belangrijk om hiermee rekening te houden en de omzetting van de ene indeling naar de andere waar mogelijk te automatiseren.
 
