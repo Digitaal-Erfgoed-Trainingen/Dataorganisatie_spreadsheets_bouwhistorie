@@ -33,10 +33,14 @@ Je kunt spreadsheets op verschillende manieren inrichten, maar sommige keuzes ku
 
 ## Opmerking
 
-Wat de beste indeling en opmaak is voor dataverzameling kan verschillen van de beste voor data-analyse. 
-Hetzelfde geldt voor de gebruikte software en interfaces. 
-Het is belangrijk om hiermee rekening te houden en de omzetting van de ene indeling naar de andere waar mogelijk te automatiseren.
+Voor het verzamelen van data is een bepaalde opmaak en indeling handig.
+Voor data-analyse of andere vervolgstappen kan een hele andere indeling of opmaak nodig zijn.
 
+Een voorbeeld: Stel dat je wilt weten of bepaalde typen glas vaker voorkomen in bepaalde geografische gebieden.
+Dan wil je misschien automatisch voor elke observatie de x en y coördinaten als nieuwe variabelen toevoegen.
+Het is dan handig om de 'verzamel' dataset (vaak 'ruwe data' genoemd) apart te houden van de analyse datasets.
+Idealiter wil je de transformatie van ruwe data naar data die je gebruikt voor analyse dan automatiseren (bijvoorbeeld met een R of Python script). 
+In het voorbeeld kan dit een script zijn wat automatisch de x en y coördinaten bepaalt op basis van het adres van een gebouw.
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ### Je analyses bijhouden
