@@ -28,7 +28,6 @@ Daarom is het belangrijk om vanaf het begin goed opgemaakte tabellen te maken,
 het liefst nog voordat je data invoert.
 
 Je kunt spreadsheets op verschillende manieren inrichten, maar sommige keuzes kunnen je mogelijkheden beperken om met de data in andere programma's te werken. Bijvoorbeeld kleurcodes in Excel, die verdwijnen wanneer je de data naar een ander formaat als CSV exporteert. Ook voor mensen kan het lastig worden: wat nu vanzelfsprekend voelt, zoals een kleurcode, een afkorting of een notitie in een cel, is over zes maanden soms niet meer te ontcijferen, voor een collega niet en voor jezelf ook niet.
-Ze kunnen er ook voor zorgen dat jijzelf over zes maanden, of een van je samenwerkingspartners, moeite krijgt om met de data te werken.
 
 ::::::::::::::::::::::::::::::::::::::::: callout
 
