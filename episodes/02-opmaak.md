@@ -1,110 +1,111 @@
 ---
-title: "Data opmaak in spreadsheets"
-teaching: 10 # teaching time in minutes
-exercises: 2 # exercise time in minutes
+title: Data opmaken in spreadsheets
+teaching: 15
+exercises: 20
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
-- FIXME
-::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::: objectives
+* Herkennen en voorkomen van veelvoorkomende opmaakfouten in spreadsheets
 
-::::::::::::::::::::::::::::::::::::: objectives
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
-- Veelvoorkomende opmaakfouten herkennen en voorkomen
-::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::: questions
 
-## Introduction
+* Hoe organiseer ik mijn spreadsheet zo zodat de data effectief kan worden gebruikt?
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown](https://pandoc.org/MANUAL.html) for static files and
-[R Markdown][r-markdown] for dynamic files that can render code into output. 
-Please refer to the [Introduction to The Carpentries 
-Workbench](https://carpentries.github.io/sandpaper-docs/) for full documentation.
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson:
+De meest voorkomende fout in het gebruik van spreadsheetprogramma's is dat het een soort persoonlijk notitieboek wordt.
+Dat wil zeggen dat je gebruik maakt van commentaar, ruimtelijke indeling, highlights etc. om informatie over te brengen.
+Als mensen kunnen we deze zaken (meestal) interpreteren, maar computers bekijken informatie niet op dezelfde manier.
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
-
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: challenge 
-
-## Challenge 1: Can you do it?
-
-What is the output of this command?
-
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
-
-:::::::::::::::::::::::: solution 
-
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
-
-:::::::::::::::::::::::::::::::::
+Dankzij de kracht van computers kunnen we data veel effectiever en sneller beheren en analyseren. 
+Om die mogelijkheden te benutten, moeten we onze data echter zo structureren dat de computer ze kan begrijpen. 
+Computers interpreteren informatie namelijk heel letterlijk.
 
 
-## Challenge 2: how do you nest solutions within challenge blocks?
+Daarom is het belangrijk om vanaf het begin goed opgemaakte tabellen te maken, 
+het liefst nog voordat je data invoert.
 
-:::::::::::::::::::::::: solution 
+Je kunt spreadsheets op verschillende manieren inrichten, maar sommige keuzes kunnen je mogelijkheden beperken om met de data in andere programma's te werken. Bijvoorbeeld kleurcodes in Excel, die verdwijnen wanneer je de data naar een ander formaat als CSV exporteert. Ook voor mensen kan het lastig worden: wat nu vanzelfsprekend voelt, zoals een kleurcode, een afkorting of een notitie in een cel, is over zes maanden soms niet meer te ontcijferen, voor een collega niet en voor jezelf ook niet.
 
-You can add a line with at least three colons and a `solution` tag.
+::::::::::::::::::::::::::::::::::::::::: callout
 
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
+## Opmerking
 
-## Figures
+Voor het verzamelen van data is een bepaalde opmaak en indeling handig.
+Voor data-analyse of andere vervolgstappen kan een hele andere indeling of opmaak nodig zijn.
 
-You can use standard markdown for static figures with the following syntax:
+Een voorbeeld: Stel dat je wilt weten of bepaalde typen glas vaker voorkomen in bepaalde geografische gebieden.
+Dan wil je misschien automatisch voor elke observatie de x en y coördinaten als nieuwe variabelen toevoegen.
+Het is dan handig om de 'verzamel' dataset (vaak 'ruwe data' genoemd) apart te houden van de analyse datasets.
+Idealiter wil je de transformatie van ruwe data naar data die je gebruikt voor analyse dan automatiseren (bijvoorbeeld met een R of Python script). 
+In het voorbeeld kan dit een script zijn wat automatisch de x en y coördinaten bepaalt op basis van het adres van een gebouw.
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
+### Je analyses bijhouden
 
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
+Wanneer je met spreadsheets werkt, bijvoorbeeld tijdens het opschonen of analyseren van data, 
+is het heel gemakkelijk om uiteindelijk een spreadsheet te krijgen die er heel anders uitziet dan het oorspronkelijke bestand.
 
-::::::::::::::::::::::::::::::::::::: callout
+Om je analyses te kunnen reproduceren of te kunnen achterhalen wat je hebt gedaan, is het verstandig om het volgende doen:
 
-Callout sections can highlight information.
+* Wijzig nooit de oorspronkelijke data. Maak een nieuw bestand met je opgeschoonde of geanalyseerde data.
+* Houd bij welke stappen je hebt uitgevoerd tijdens het opschonen of analyseren van de data. We raden aan dit te doen in een gewoon tekstbestand dat je in dezelfde map als het databestand bewaart.
 
-They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present "asides": 
-content that is not central to the narrative of the lesson,
-e.g. by providing the answer to a commonly-asked question.
+Pas deze principes toe tijdens de oefeningen van deze cursus.
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+### Data structureren in spreadsheets
 
+De belangrijkste regel is 'houd het netjes', dit komt neer op:
 
-## Math
+1. Plaats alle variabelen in kolommen.
+2. Plaats elke waarneming op een eigen rij.
+3. Combineer niet meerdere stukjes informatie in één cel. Soms lijkt informatie één geheel te vormen, maar bedenk of je die data later ook afzonderlijk wilt kunnen gebruiken of sorteren.
+4. Laat de ruwe data ongewijzigd: verander ze niet!
+5. Exporteer de opgeschoonde data naar een tekstbestand, zoals CSV (*comma-separated values*). Zo kan iedereen de data gebruiken. Bovendien is dit formaat vereist door de meeste databases.
 
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
+::::::::::::::::::::::::::::::::::::::: challenge
 
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
+## Oefening
 
-Cool, right?
+We gaan een rommelige dataset bekijken en beschrijven hoe we deze zouden opschonen.
 
-::::::::::::::::::::::::::::::::::::: keypoints 
+1. Download de dataset door [hier te klikken](https://github.com/Digitaal-Erfgoed-Trainingen/Digitale_geletterdheid_WS1/raw/refs/heads/main/data/historisch-glas-in-gebouwen_messy.xlsx).
+2. Open de data in een spreadsheetprogramma (Excel of iets vergelijkbaars). Onder de tabel kun je zien dat er 3 tabbladen zijn: 'voor 1900', 'Na 1900' en 'Datum onbekend'.
+3. Jij bent nu verantwoordelijk voor dit project en wilt de data gaan analyseren.
+Bespreek samen met degene naast je wat er mis is met deze spreadsheet. 
+Bespreek ook welke stappen nodig zijn om de drie tabbladen op te schonen en alle data samen te voegen in één spreadsheet.
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
+**Belangrijk:** vergeet ons eerste advies niet: maak een nieuw bestand of tabblad voor de opgeschoonde data. Wijzig nooit de oorspronkelijke (ruwe) data.
 
-::::::::::::::::::::::::::::::::::::::::::::::::
+Na deze oefening bespreken we gezamenlijk wat er mis was met de data en hoe je dit zou kunnen oplossen.
 
-[r-markdown]: https://rmarkdown.rstudio.com/
+::::::::::::::: solution
+
+## Oplossing
+
+* Neem ongeveer 10 minuten de tijd voor deze oefening.
+* Alle fouten die worden beschreven in hoofdstuk [Meestvoorkomende fouten](03-meestvoorkomende-fouten.md) komen voor in de rommelige dataset, behalve 'Niet invullen van nullen'. 
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
+Er zijn uitstekende bronnen beschikbaar die je helpen bij het werken met data in spreadsheets. Hieronder vind je enkele voorbeelden.
+
+Met betrekking tot programmeren in R:
+
+> Hadley Wickham, *Tidy Data*, deel 59, nummer 10, september 2014, *Journal of Statistical Software*. [http://www.jstatsoft.org/v59/i10](https://www.jstatsoft.org/v59/i10).
+
+Met betrekking tot het op de juiste manier organiseren van data in spreadsheets:
+
+> Karl W. Broman & Kara H. Woo (2018), *Data Organization in Spreadsheets*, The American Statistician, 72:1, 2-10. [DOI: 10.1080/00031305.2017.1375989](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989).
+
+:::::::::::::::::::::::::::::::::::::::: keypoints
+
+* Wijzig nooit je ruwe data. Maak altijd een kopie voordat je wijzigingen aanbrengt.
+* Organiseer je data zo dat jijzelf-in-de-toekomst, anderen, en een computer de data kan begrijpen.
+* Voorkom veelvoorkomende fouten in data opmaak.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
