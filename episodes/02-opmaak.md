@@ -44,7 +44,7 @@ Het is belangrijk om hiermee rekening te houden en de omzetting van de ene indel
 Wanneer je met spreadsheets werkt, bijvoorbeeld tijdens het opschonen of analyseren van data, 
 is het heel gemakkelijk om uiteindelijk een spreadsheet te krijgen die er heel anders uitziet dan het oorspronkelijke bestand.
 
-Om je analyses te kunnen reproduceren of te kunnen achterhalen wat je hebt gedaan, moet je het volgende doen:
+Om je analyses te kunnen reproduceren of te kunnen achterhalen wat je hebt gedaan, is het verstandig om het volgende doen:
 
 * Wijzig nooit de oorspronkelijke data. Maak een nieuw bestand met je opgeschoonde of geanalyseerde data.
 * Houd bij welke stappen je hebt uitgevoerd tijdens het opschonen of analyseren van de data. We raden aan dit te doen in een gewoon tekstbestand dat je in dezelfde map als het databestand bewaart.
