@@ -71,7 +71,7 @@ We gaan een rommelige dataset bekijken en beschrijven hoe we deze zouden opschon
 2. Open de data in een spreadsheetprogramma (Excel of iets vergelijkbaars). Onder de tabel kun je zien dat er 3 tabbladen zijn: 'voor 1900', 'Na 1900' en 'Datum onbekend'.
 3. Jij bent nu verantwoordelijk voor dit project en wilt de data gaan analyseren.
 Bespreek samen met degene naast je wat er mis is met deze spreadsheet. 
-Bespreek ook welke stappen nodig zijn om de tabbladen `voor 1900`, `na 1900` en `Datum onbekend` op te schonen en alle data samen te voegen in één spreadsheet.
+Bespreek ook welke stappen nodig zijn om de drie tabbladen op te schonen en alle data samen te voegen in één spreadsheet.
 
 **Belangrijk:** vergeet ons eerste advies niet: maak een nieuw bestand of tabblad voor de opgeschoonde data. Wijzig nooit de oorspronkelijke (ruwe) data.
 
