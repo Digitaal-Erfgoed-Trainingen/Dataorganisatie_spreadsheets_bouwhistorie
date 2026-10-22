@@ -4,18 +4,28 @@ title: Installatie en voorbereiding
 
 ## Data
 
-**Download** [dit databestand](https://github.com/Digitaal-Erfgoed-Trainingen/Digitale_geletterdheid_WS1/raw/refs/heads/main/data/historisch-glas-in-gebouwen_messy.xlsx)
+In deze les gebruiken we 2 datasets:
+
+### Messy glas in gebouwen dataset 
+
+**Download** [historisch-glas-in-gebouwen_messy.xlsx](https://github.com/Digitaal-Erfgoed-Trainingen/Digitale_geletterdheid_WS1/raw/refs/heads/main/data/historisch-glas-in-gebouwen_messy.xlsx)
 naar je computer op een handige plek.
 
-### Over de data
+#### Over de data
 
-De dataset die in deze module wordt gebruikt is gebasseerd op een door de Rijksdienst voor het Cultureel Erfgoed ontwikkelde inventarisatie van *glas in gebouwen*. Het is een subset van de echte data en is voor deze module bewust 'verrommeld'. 
+Deze dataset is gebasseerd op een door de Rijksdienst voor het Cultureel Erfgoed ontwikkelde inventarisatie van *glas in gebouwen*. Het is een subset van de echte data en is voor deze module bewust 'verrommeld'. 
 (De echte data ziet er gelukkig een stuk georganiseerder uit!). De dataset is dan ook puur bedoeld voor trainingsdoeleinden. 
 
 De data is beschikbaar onder een CC-BY-licentie en mogen dus met bronvermelding opnieuw worden gebruikt.
 
 > Van der Stok, Glas in gebouwen. 
 
+### Dataset voor de afsluitende opdracht
+Voor de afsluitende opdracht vragen we je om de geleerde best practices toe te passen op je eigen dataset.
+**We vragen je daarom om ervoor te zorgen dat je tijdens de cursus toegang hebt tot die dataset.**
+
+Als je geen eigen dataset hebt om te gebruiken kun je gebruik maken van [FIXME: GOEDE NAAM VOOR DEZE DATASET + FIXME DOWNLOADINSTRUCTIES].
+FIXME: deze dataset is tot stand gekomen bla bla
 
 
 ## Software
