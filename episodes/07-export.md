@@ -61,7 +61,7 @@ komma's als decimaal scheidingsteken gebruiken. In dat geval zal de software die
 de data waarschijnlijk onjuist in kolommen weergeven. Dit komt doordat de komma's die deel uitmaken van de datawaarden
 als scheidingstekens worden geïnterpreteerd.
 
-Als je werkt met data die komma's bevatten, moet je waarschijnlijk een ander scheidingsteken gebruiken wanneer je in een spreadsheet werkt. In dat
+Als je werkt met data die komma's bevatten, moet je waarschijnlijk een ander scheidingsteken gebruiken wanneer je in een spreadsheet werkt. In dat geval kun je ook kiezen om een tab, een puntkomma (;) of een pipe (|) te gebruiken.
 geval kun je overwegen tabs als scheidingsteken te gebruiken en met TSV-bestanden te werken. TSV-bestanden kunnen op dezelfde manier uit spreadsheetprogramma's worden geëxporteerd
 als CSV-bestanden.
 
