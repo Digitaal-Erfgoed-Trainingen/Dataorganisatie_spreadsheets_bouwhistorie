@@ -56,7 +56,7 @@ Laten we het bestand dat je in Excel hebt geopend opslaan in CSV-formaat:
 
 #### Kanttekeningen bij komma's
 
-In sommige datasets kunnen de datawaarden zelf komma's (,) bevatten. Dit geldt met name in landen die
+In sommige datasets kunnen de datawaarden zelf komma's (,) bevatten. Bijvoorbeeld landen die
 komma's als decimaal scheidingsteken gebruiken. In dat geval zal de software die je gebruikt (inclusief Excel)
 de data waarschijnlijk onjuist in kolommen weergeven. Dit komt doordat de komma's die deel uitmaken van de datawaarden
 als scheidingstekens worden geïnterpreteerd.
