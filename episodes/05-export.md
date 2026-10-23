@@ -21,7 +21,20 @@ Het is geen goed idee om de data waarmee je je analyses gaat uitvoeren op te sla
 het standaardbestandsformaat van Excel (`*.xls` of `*.xlsx` - afhankelijk van de
 Excel-versie). Waarom niet?
 
-- Omdat het een niet-open bestandsformaat is. Het is mogelijk dat de technologie om
+
+Omdat:
+
+- Een Excel-bestand bevat meer dan alleen data. Formules, opmaak, kleuren, meerdere tabbladen en macro’s zitten allemaal in hetzelfde bestand. Daardoor is het in de praktijk vooral goed te lezen met Excel zelf.
+- Andere programma’s lezen het niet altijd hetzelfde. LibreOffice, Apple Numbers, Google Sheets, een GIS- of een analyseprogramma kunnen een Excel-bestand openen, maar opmaak, formules of datums kunnen daarbij anders uitpakken of verloren gaan.
+- Ook verschillende versies van Excel verwerken data niet altijd gelijk. Datums zijn een bekend voorbeeld: die kunnen bij het uitwisselen tussen versies of tussen Windows en Mac verschuiven.
+- Voor de lange termijn is eenvoud veiliger. Hoe ingewikkelder een bestandsformaat, hoe groter de kans dat het over tientallen jaren lastig te openen is. Het oude .xls-formaat wordt nu al door steeds minder programma’s goed ondersteund.
+
+Bewaar je analysedata daarom (ook) in een universeel, open en statisch formaat zoals CSV. Dit is platte tekstbestanden waarin de kolommen door komma's worden gescheiden, vandaar 'comma separated values' of CSV. Gewone tekst met alleen rijen en kolommen, die door vrijwel elk programma gelezen kan worden, nu en in de toekomst.
+
+Data in een CSV-bestand kan bovendien eenvoudig worden geïmporteerd in andere formaten en
+omgevingen, zoals SQLite, Python en R.
+
+We zijn niet gebonden aan een bepaalde versie van een duur programma wanneer we met CSV-bestanden werken, dus het is een goed formaat voor maximale overdraagbaarheid en duurzaamheid. De meeste spreadsheetprogramma's kunnen eenvoudig opslaan in gescheiden tekstformaten zoals CSV, al kunnen ze tijdens het exporteren wel een waarschuwing geven.
   het bestand te openen in de toekomst niet meer bestaat (of zo zeldzaam wordt)
   dat het lastig, zo niet onmogelijk wordt om het bestand te openen.
 
