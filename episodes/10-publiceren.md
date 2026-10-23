@@ -38,11 +38,12 @@ FIXME links naar real-life voorbeelden geven
 
 ## Vindbare, Toegankelijke, Interoperabele en Herbruikbare data (FAIR principes)
 Bij het publiceren van data kunnen de [FAIR data principes](https://www.go-fair.org/fair-principles/) een handige 
-richtlijn zijn. Nogmaals, afhankelijk van je doelgroep en usecase zul je deze richtlijn in meer of mindere mate gebruiken.
+richtlijn zijn. Nogmaals, afhankelijk van je doelgroep en usecase zul je hier verschillende keuzes in maken.
 
 ### Vindbaar (**F**indable)
 Zorg dat anderen de data makkelijk kunnen vinden of doorzoeken.
-- Gebruik een goed online platform zodat de data makkelijk vindbaar is. 
+
+- Gebruik een goed online platform zodat de data makkelijk vindbaar is. FIXME aanpassen!
   - Dataverse (https://dataverse.nl/dataverse/RCE)
   - Datastation SSH (https://ssh.datastations.nl/) van DANS
   - Zenodo (https://zenodo.org/)
@@ -51,7 +52,7 @@ Zorg dat anderen de data makkelijk kunnen vinden of doorzoeken.
 je dataset beschrijven. Het zorgt ervoor dat andere gebruikers (en zoekmachines) een beeld krijgen van je data zonder dat ze de data zelf hoeven te bekijken.
 Idealiter gebruik je voor de metadata een standaardformat zoals [DCAT-ap-nl30](https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/), 
 afhankelijk van de usecase kan dit ook overkill zijn.  
-- Maak duidelijk welke versie van je data de publicatie betreft. Gebruik het liefst een *globally unique and persistent identifier (URI)*. 
+- Maak duidelijk welke versie van je data de publicatie betreft. Gebruik het liefst een *globally unique and persistent identifier*. 
 Dit is een unieke URL die altijd naar jouw data verwijst. Met deze URL kun je expliciet verwijzen naar een bepaalde versie van de data.
 Als je publiceert op één van de bovenstaande platformen, wordt meestal automatisch zo'n identifier aangemaakt. 
 
@@ -60,6 +61,7 @@ Maak de data publiek toegankelijk of beschrijf hoe je toegang tot de data kunt v
 
 ### Interoperabel (**I**nteroperable)
 Zorg dat de dataset interoperabel (koppelbaar, uitwisselbaar) is met andere datasets.
+
 - Gebruik gestandardiseerde vocabulair en identificering. Bijvoorbeeld:
   - Gebruik het monumentnummer vanuit het monumentregister, 
   zodat de data gekoppeld kan worden aan andere datasets die dezelfde standaard nummering gebruiken.
@@ -68,7 +70,8 @@ Zorg dat de dataset interoperabel (koppelbaar, uitwisselbaar) is met andere data
 
 ### Herbruikbaar (**R**eusable)
 Zorg dat anderen de data kunnen gebruiken.
-- Gebruik de *best practices* voor dataorganisatie die je tot nu to hebt geleerd. 
+
+- Gebruik de *best practices* voor dataorganisatie die je tot nu toe hebt geleerd. 
 Een georganiseerde dataset is een herbruikbare dataset.
 - Voeg een (open) licentie toe. Zie de 'uitgelicht' over licenties hieronder.
 
@@ -83,6 +86,8 @@ De meest voorkomende licenties en een korte samenvatting van hun eigenschappen z
 | **CC0** | Geen rechten voorbehouden (publiek domein). Hergebruik zonder voorwaarden. |
 | **CC BY** | Alles mag, mits je de bron vermeldt. |
 | **CC BY-NC** | Bronvermelding verplicht, geen commercieel gebruik. |
+
+Check ook of je in jouw dataset gebruik maakt van bronnen die een bepaalde licentie hebben!
 
 Dit lesmateriaal heeft de licentie CC BY, omdat we vinden dat iedereen dit lesmateriaal moet kunnen hergebruiken, 
 maar we daar wel graag de credits voor willen ontvangen.   
