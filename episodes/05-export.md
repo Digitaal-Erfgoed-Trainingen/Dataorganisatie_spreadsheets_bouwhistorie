@@ -1,110 +1,70 @@
 ---
-title: "Data exporteren"
-teaching: 10 # teaching time in minutes
-exercises: 2 # exercise time in minutes
+title: Data exporteren
+teaching: 10
+exercises: 0
 ---
 
-:::::::::::::::::::::::::::::::::::::: questions 
-- FIXME
-::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::: objectives
 
-::::::::::::::::::::::::::::::::::::: objectives
+- Begrijpen waarom je spreadsheet data beter opslaat in universele bestandsformaten.
+- Data vanuit een spreadsheet exporteren naar een CSV-bestand.
 
-- Gegevens op een correcte wijze exporteren voor gebruik in andere applicaties en analyseomgevingen.
-::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Introduction
+:::::::::::::::::::::::::::::::::::::::: questions
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown](https://pandoc.org/MANUAL.html) for static files and
-[R Markdown][r-markdown] for dynamic files that can render code into output. 
-Please refer to the [Introduction to The Carpentries 
-Workbench](https://carpentries.github.io/sandpaper-docs/) for full documentation.
+- Hoe kunnen we data uit spreadsheets exporteren op een manier die bruikbaar is voor vervolgtoepassingen?
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson:
+::::::::::::::::::::::::::::::::::::::::::::::::::
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+Het is geen goed idee om de data waarmee je je analyses gaat uitvoeren op te slaan in
+het standaardbestandsformaat van Excel (`*.xls` of `*.xlsx` - afhankelijk van de
+Excel-versie). Waarom niet?
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+Omdat:
 
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
+- Een Excel-bestand bevat meer dan alleen data. 
+Formules, opmaak, kleuren, meerdere tabbladen en macro’s zitten allemaal in hetzelfde bestand. 
+Daardoor is het in de praktijk vooral goed te lezen met Excel zelf.
+- Andere programma’s lezen het niet altijd hetzelfde. 
+- LibreOffice, Apple Numbers, Google Sheets, een GIS- of een analyseprogramma kunnen een Excel-bestand openen, 
+maar opmaak, formules of datums kunnen daarbij anders uitpakken of verloren gaan.
+- Ook verschillende versies van Excel verwerken data niet altijd gelijk. 
+Datums zijn een bekend voorbeeld: die kunnen bij het uitwisselen tussen versies of tussen Windows en Mac onverwachts veranderen.
+- Voor de lange termijn is eenvoud veiliger. 
+Hoe ingewikkelder een bestandsformaat, hoe groter de kans dat het over tientallen jaren lastig te openen is. 
+Het oude .xls-formaat wordt nu al door steeds minder programma’s goed ondersteund.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bewaar je analysedata daarom (ook) in een universeel, open en statisch formaat zoals CSV. 
+CSV is een plat tekstbestand waarin de kolommen door komma's worden gescheiden, vandaar 'comma separated values' of CSV. 
 
-::::::::::::::::::::::::::::::::::::: challenge 
+Data in een CSV-bestand kan bovendien eenvoudig worden geïmporteerd in andere formaten en
+omgevingen, zoals SQLite, Python en R.
 
-## Challenge 1: Can you do it?
+We zijn niet gebonden aan een bepaalde versie van een duur programma wanneer we met CSV-bestanden werken, 
+dus het is een goed formaat voor maximale overdraagbaarheid en duurzaamheid. 
+De meeste spreadsheetprogramma's kunnen eenvoudig opslaan in gescheiden tekstformaten zoals CSV, 
+al kunnen ze tijdens het exporteren wel een waarschuwing geven.
 
-What is the output of this command?
+Laten we het bestand dat je in Excel hebt geopend opslaan in CSV-formaat:
 
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
+1. Kies in het bovenste menu 'Bestand' en 'Opslaan als'.
+2. Kies in het veld 'Formaat' uit de lijst 'Comma Separated Values' (`*.csv`).
+3. Controleer nogmaals de bestandsnaam en de locatie waar je het wilt opslaan en klik op 'Opslaan'.
 
-:::::::::::::::::::::::: solution 
+#### Kanttekeningen bij komma's
 
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
+In sommige datasets kunnen de datawaarden zelf komma's (,) bevatten. Bijvoorbeeld landen die
+komma's als decimaal scheidingsteken gebruiken. In dat geval zal de software die je gebruikt (inclusief Excel)
+de data waarschijnlijk onjuist in kolommen weergeven. Dit komt doordat de komma's die deel uitmaken van de datawaarden
+als scheidingstekens worden geïnterpreteerd.
 
-:::::::::::::::::::::::::::::::::
+Als je werkt met data die komma's bevatten, moet je waarschijnlijk een ander scheidingsteken gebruiken wanneer je in een spreadsheet werkt. 
+In dat geval kun je ook kiezen om een tab, een puntkomma (;) of een pipe (|) te gebruiken.
 
+:::::::::::::::::::::::::::::::::::::::: keypoints
 
-## Challenge 2: how do you nest solutions within challenge blocks?
+- Data die in gangbare spreadsheetformaten zijn opgeslagen, worden door software voor data-analyse vaak niet correct ingelezen, waardoor er fouten in je data kunnen ontstaan.
+- Door data uit spreadsheets te exporteren naar een plat tekstbestand zoals CSV zijn ze consistent bruikbaar in de meeste programma's.
 
-:::::::::::::::::::::::: solution 
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Figures
-
-You can use standard markdown for static figures with the following syntax:
-
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
-
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
-
-::::::::::::::::::::::::::::::::::::: callout
-
-Callout sections can highlight information.
-
-They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present "asides": 
-content that is not central to the narrative of the lesson,
-e.g. by providing the answer to a commonly-asked question.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-## Math
-
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
-
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-[r-markdown]: https://rmarkdown.rstudio.com/
+::::::::::::::::::::::::::::::::::::::::::::::::::
