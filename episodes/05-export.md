@@ -65,6 +65,6 @@ In dat geval kun je ook kiezen om een tab, een puntkomma (;) of een pipe (|) te 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Data die in gangbare spreadsheetformaten zijn opgeslagen, worden door software voor data-analyse vaak niet correct ingelezen, waardoor er fouten in je data kunnen ontstaan.
-- Door data uit spreadsheets te exporteren naar een plat tesktbestand zoals CSV zijn ze consistent bruikbaar in de meeste programma's.
+- Door data uit spreadsheets te exporteren naar een plat tekstbestand zoals CSV zijn ze consistent bruikbaar in de meeste programma's.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
