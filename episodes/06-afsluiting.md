@@ -16,12 +16,12 @@ In deze les hebben we een aantal *best practices* geleerd over het organiseren v
 Die ga je nu toepassen op je eigen dataset.
 
 ::: callout
-## Nog meer glas data
-Als je geen eigen dataset hebt om te gebruiken kun je gebruik maken van FIXME: GOEDE NAAM VOOR DEZE DATASET + FIXME DOWNLOADINSTRUCTIES.
+## Geen eigen dataset?
+Als je geen eigen dataset hebt om te gebruiken kun je gebruik maken van `historisch-glas-in-gebouwen_real-life`.
+[Volg hier de downloadinstructies](learners/setup.md#dataset-voor-de-afsluitende-opdracht).
 
-FIXME deze dataset is tot stand gekomen bla bla
 De dataset bestaat uit 2 bestanden. Kun je zien hoe je de data in de verschillende bestanden aan elkaar zou kunnen koppelen? 
-(NB: misschien kun je hier in de opdracht hieronder nog verbeteringen in voorstellen).
+(N.B. misschien kun je hier in de opdracht hieronder nog verbeteringen voor voorstellen).
 
 :::
 
