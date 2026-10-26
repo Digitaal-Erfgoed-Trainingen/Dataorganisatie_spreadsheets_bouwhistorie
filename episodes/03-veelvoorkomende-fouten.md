@@ -71,22 +71,22 @@ ligt. Een eenheid haal je bijvoorbeeld uit de cel en zet je in de kolomnaam.
 
 ## Overzicht
 
-| # | Fout | Oplossing in het kort                                                            |
-|---|------|----------------------------------------------------------------------------------|
-| | **Opbouw en opmaak van de dataset** |                                                                                  |
-| 1 | Meerdere tabellen op één werkblad | Eén tabel per werkblad; data van hetzelfde soort onder elkaar.                   |
-| 2 | Meerdere tabbladen voor dezelfde data | Zet alles in één tabel en voeg een kolom toe. Filter wanneer nodig op die kolom. |
-| 3 | Opmaak gebruiken om informatie vast te leggen | Leg informatie vast in een kolom, niet in een kleur.                             |
-| 4 | Opmaak om de tabel mooi te maken | Geen samengevoegde cellen, titels of lege rijen in de tabel.                     |
-| 5 | Metadata en uitleg in de tabel | Zet uitleg in een README of data dictionary.                                     |
-| 6 | Geen unieke code per rij | Elke rij een eigen, unieke code die nooit leeg is.                               |
-| | **Waardes in de cel** |                                                                                  |
-| 7 | Opmerkingen in een cel | Twijfel in een eigen kolom; toelichting in een opmerkingenkolom.                 |
-| 8 | Meer dan één gegeven in een cel | Eén gegeven per cel: eenheid in de kolomnaam, lijstjes op aparte rijen.         |
-| 9 | Onbekende en ontbrekende waarden | Kies één manier, bij voorkeur een lege cel.                                      |
-| 10 | Datums die niet overal hetzelfde zijn opgemaakt | Eén notatie, bij voorkeur `jjjj-mm-dd`.                                          |
-| 11 | Meerdere dateringsgegevens in één kolom | Begin- en eindjaar in aparte kolommen.                                           |
-| 12 | Vrije woorden voor categorieën | Gebruik een referentielijst of thesaurus.                                        |
+| # | Fout |
+|---|------|
+| | **Opbouw en opmaak van de dataset** |
+| 1 | Meerdere tabellen op één werkblad |
+| 2 | Meerdere tabbladen voor dezelfde data |
+| 3 | Opmaak gebruiken om informatie vast te leggen |
+| 4 | Opmaak om de tabel mooi te maken |
+| 5 | Metadata en uitleg in de tabel |
+| 6 | Geen unieke code per rij |
+| | **Waardes in de cel** |
+| 7 | Opmerkingen in een cel |
+| 8 | Meer dan één gegeven in een cel |
+| 9 | Onbekende en ontbrekende waarden |
+| 10 | Datums die niet overal hetzelfde zijn opgemaakt |
+| 11 | Meerdere dateringsgegevens in één kolom |
+| 12 | Vrije woorden voor categorieën |
 
 ## Opbouw en opmaak van de dataset
 
@@ -378,6 +378,38 @@ een bestaande thesaurus zoals de
 [Getty AAT](https://www.getty.edu/research/tools/vocabularies/aat/), en zet
 verschillende soorten informatie in aparte kolommen. Meer hierover staat in
 het hoofdstuk [Referentielijsten gebruiken](06-referentielijsten.md).
+
+## Samenvatting
+
+De tabel hieronder vat alle fouten samen. Per fout staat erin:
+
+- **Fout**: de naam van de fout, zoals hierboven besproken.
+- **Oplossing in het kort**: wat je in plaats daarvan kunt doen.
+- **RCE Datakwaliteitsrichtlijn**: het nummer van de kwaliteitsdimensie uit
+  Tabel 2 van de Datakwaliteitsrichtlijnen van de RCE (versie 1.0) waar de
+  fout het meest bij past. De gebruikte dimensies zijn:
+  1 = unieke identificatie en referentiële integriteit,
+  2 = structurele consistentie,
+  4 = granulariteit en eenduidige representatie,
+  5 = semantische eenduidigheid en interoperabiliteit en
+  9 = temporele resolutie.
+
+| # | Fout | Oplossing in het kort | RCE Datakwaliteitsrichtlijn |
+|---|------|------|---|
+| | **Opbouw en opmaak van de dataset** | | |
+| 1 | Meerdere tabellen op één werkblad | Eén tabel per werkblad; data van hetzelfde soort onder elkaar. | 2 |
+| 2 | Meerdere tabbladen voor dezelfde data | Zet alles in één tabel en voeg een kolom toe. Filter wanneer nodig op die kolom. | 2 |
+| 3 | Opmaak gebruiken om informatie vast te leggen | Leg informatie vast in een kolom, niet in een kleur. | 2 |
+| 4 | Opmaak om de tabel mooi te maken | Geen samengevoegde cellen, titels of lege rijen in de tabel. | 2 |
+| 5 | Metadata en uitleg in de tabel | Zet uitleg in een README of data dictionary. | 5 |
+| 6 | Geen unieke code per rij | Elke rij een eigen, unieke code die nooit leeg is. | 1 |
+| | **Waardes in de cel** | | |
+| 7 | Opmerkingen in een cel | Twijfel in een eigen kolom; toelichting in een opmerkingenkolom. | 4 |
+| 8 | Meer dan één gegeven in een cel | Eén gegeven per cel: eenheid in de kolomnaam, lijstjes op aparte rijen. | 2 |
+| 9 | Onbekende en ontbrekende waarden | Kies één manier, bij voorkeur een lege cel. | 2 |
+| 10 | Datums die niet overal hetzelfde zijn opgemaakt | Eén notatie, bij voorkeur `jjjj-mm-dd`. | 9 |
+| 11 | Meerdere dateringsgegevens in één kolom | Begin- en eindjaar in aparte kolommen. | 9 |
+| 12 | Vrije woorden voor categorieën | Gebruik een referentielijst of thesaurus. | 5 |
 
 ## Conclusie
 
