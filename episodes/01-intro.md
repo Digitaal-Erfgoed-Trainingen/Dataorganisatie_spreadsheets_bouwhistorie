@@ -5,106 +5,73 @@ exercises: 2 # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
-- Wat zijn de basisprincipes voor het gebruik van spreadsheets voor goede gegevensorganisatie?
+- Wat zijn de basisprincipes waaraan data in spreadsheets moet voldoen om bruikbaar te worden voor analayse en koppelbaar te zijn met andere datasets? 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Beschrijf de basisprincipes voor het gebruik van spreadsheets voor goede gegevensorganisatie.
+- Het kunnen beschrijven van *best practices* voor het organiseren van spreadsheets zodat deze bruikbaar worden voor analyse en koppelbaar met andere datasets. 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Introduction
+## Leerdoelen
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown](https://pandoc.org/MANUAL.html) for static files and
-[R Markdown][r-markdown] for dynamic files that can render code into output. 
-Please refer to the [Introduction to The Carpentries 
-Workbench](https://carpentries.github.io/sandpaper-docs/) for full documentation.
+In deze les leer je hoe je data in spreadsheets beter kunt organiseren om er efficiënter mee te kunnen werken. Je leert hoe je bestaande data dient te structureren en nieuwe dataverzamelingen beter tot stand kunt brengen. De data wordt hierdoor bruikbaarder voor analyse en makkelijker uitwisselbaar en koppelbaar met andere datasets. N.B. In deze les leer je *niet* hoe je data analyseert met spreadsheets.
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson:
+Na afloop van deze module kan de deelnemer:
 
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
+* Veelvoorkomende opmaakfouten herkennen en voorkomen; 
+* Eenvoudige kwaliteitscontroles uitvoeren en basisbewerkingen op tabulaire gegevens toepassen; 
+* Gegevens op een correcte wijze exporteren voor gebruik in andere applicaties en analyseomgevingen.
+* Identificeren wanneer het gebruiken of opstellen van referentielijsten/ thesauri van toegevoegde waarde is bij een dataset;
+* Hoe het beste omgegaan kan worden met het documenteren van afbeeldingen. 
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+### Waarom behandelen we geen data-analyse in spreadsheets?
 
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
+* Data-analyse in spreadsheets vereist vaak veel handmatig uit te voeren stappen. Wanneer je iets wilt aanpassen of een analyse wilt uitvoeren met een nieuwe dataset, moet je doorgaans veel stappen handmatig opnieuw uitvoeren. 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+* Het is lastig om analyses in spreadsheets te controleren en te reproduceren. Wanneer je later je werk opnieuw wilt bekijken of iemand om een toelichting op je analyse vraagt, is het vaak moeilijk om precies te achterhalen welke stappen zijn uitgevoerd. Dit geldt zowel voor statistische analyses als voor het maken van grafieken en visualisaties.
 
-::::::::::::::::::::::::::::::::::::: challenge 
+Natuurlijk kunnen hier ook scripts voor worden gemaakt, maar dat vergt een aanzienlijke basis programmeren, hetgeen voor de beoogde doelgroep van deze cursus te ver gaat.
 
-## Challenge 1: Can you do it?
+## Spreadsheet software
 
-What is the output of this command?
+Om met tabulaire data te werken zijn er verschillende spreadsheet software beschikbaar. Omdat de meeste deelnemers waarschijnlijk Excel gebruiken, wordt deze software gebruikt bij de voorbeelden in deze cursus. Hoewel de exacte functies en opdrachten per programma kunnen verschillen kan toch ook met andere software worden gewerkt aangezien de onderliggende principes hetzelfde blijven.
 
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
+Alternatieven voor excel zijn gegeven op op de [setup pagina](index.html#software)
 
-:::::::::::::::::::::::: solution 
+:::::::::::::::::::::::::::::::::::::::::  callout
 
-## Output
+## Oefening
+
+- Wie heeft er wel eens gewerkt met spreadsheets? 
+
+- Welke bewerkingen voeren jullie uit in spreadsheets? En voor welke bewerkingen denken jullie dat spreadsheets geschikt zijn?
+
+- Wie heeft er wel eens iets in een spreadsheet gedaan waar hij of zij achteraf spijt van had?  
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
  
-```output
-[1] "This new lesson looks good"
-```
+## Spreadsheets voor erfgoeddata
 
-:::::::::::::::::::::::::::::::::
+Binnen het erfgoedveld worden spreadsheets veelvuldig gebruikt om data over erfgoed objecten, zoals archeologische vondsten, of bouwhistorische kenmerken van gebouwen, te verzamelen en te beheren. Spreadsheets bieden de mogelijkheid om deze data te ordenen, te selecteren en te sorteren. Daarnaast kunnen ze worden gebruikt om statitische analyses mee uit te voeren en partronen inzichtelijk te maken door bijvoorbeeld het maken van diagrammen of grafieken.
 
+Erfgoedonderzoek vraagt echter steeds vaker om het combineren van gegevens uit verschillende bronnen. Denk bijvoorbeeld aan het koppelen van bouwhistorische eigenschappen aan gebouwde rijksmonumenten of losse archeologische vondsten aan archeologische opgravingen. Om dergelijke koppelingen mogelijk te maken, is het belangrijk dat gegevens systematisch worden verzameld en gestructureerd, zodat computers deze eenvoudig kunnen lezen en verwerken.
 
-## Challenge 2: how do you nest solutions within challenge blocks?
+Doordat spreadsheetsoftware uitgebreide mogelijkheden biedt voor opmaak en presentatie, worden gegevens vaak ingericht op een manier die voor mensen goed leesbaar is, maar minder geschikt is voor geautomatiseerde analyses, verwerking in databases en uitwisseling met andere datasets. Voorbeelden van veelvoorkomende problemen zijn dat bij het opmaken van een tabel voor een publicatie vaak cellen worden samengevoegd waardoor het door de computer niet meer duidelijk is bij welke kolom een datapunt hoort. Een andere veelvoorkomende probleem is dat op 1 tabblad meerdere tabellen gegeven zijn wat het voor de computer moeilijk maakt om deze als afzonderlijke datasets te zien. 
 
-:::::::::::::::::::::::: solution 
+Het opschonen van gegevens (data cleaning) helpt om de verzamelde erfgoed data koppelbaar te maken met andere bronnen. Daarnaast zorgt het opschonen van gegevens ervoor dat je dataset beter geschikt is om te importeren in software voor statistische analyses. In deze module laten we, aan de hand van een paar concrete voorbeelden zien hoe je data kan opschonen. Daarnaast tonen we verschillende functies van spreadsheetprogramma’s om de kwaliteit van je gegevens te controleren en verkennende statistische analyses uit te voeren.
 
-You can add a line with at least three colons and a `solution` tag.
+De module bestaat uit de volgende hoofdstukken:
 
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
+NOG AANPASSEN AAN HET EINDE
+1. [Formatting data tables in spreadsheets](01-format-data.md)
+2. [Formatting problems](02-common-mistakes.md)
+3. [Dates as data](03-dates-as-data.md)
+4. [Quality control](04-quality-control.md)
+5. [Exporting data](05-exporting-data.md)
 
-## Figures
+:::::::::::::::::::::::::::::::::::::::: keypoints
 
-You can use standard markdown for static figures with the following syntax:
+- Een goede organisatie van de data vormt de basis van elk project.
 
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
-
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
-
-::::::::::::::::::::::::::::::::::::: callout
-
-Callout sections can highlight information.
-
-They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present "asides": 
-content that is not central to the narrative of the lesson,
-e.g. by providing the answer to a commonly-asked question.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-## Math
-
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
-
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-[r-markdown]: https://rmarkdown.rstudio.com/
+::::::::::::::::::::::::::::::::::::::::::::::::::
