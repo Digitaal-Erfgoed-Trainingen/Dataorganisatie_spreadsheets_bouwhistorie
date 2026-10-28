@@ -400,7 +400,7 @@
         
 <section id="aio-01-intro"><p>Content from <a href="01-intro.html">Introductie</a></p>
 <hr>
-<p>Last updated on 2026-10-20 |
+<p>Last updated on 2026-10-28 |
 
         <a href="https://github.com/Digitaal-Erfgoed-Trainingen/Digitale_geletterdheid_WS1/edit/main/episodes/01-intro.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -414,8 +414,9 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>Wat zijn de basisprincipes voor het gebruik van spreadsheets voor
-goede gegevensorganisatie?</li>
+<li>Wat zijn de basisprincipes waaraan data in spreadsheets moet voldoen
+om bruikbaar te worden voor analayse en koppelbaar te zijn met andere
+datasets?</li>
 </ul>
 </div>
 </div>
@@ -425,126 +426,123 @@ goede gegevensorganisatie?</li>
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
 <ul>
-<li>Beschrijf de basisprincipes voor het gebruik van spreadsheets voor
-goede gegevensorganisatie.</li>
+<li>Het kunnen beschrijven van <em>best practices</em> voor het
+organiseren van spreadsheets zodat deze bruikbaar worden voor analyse en
+koppelbaar met andere datasets.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<section><h2 class="section-heading" id="leerdoelen">Leerdoelen<a class="anchor" aria-label="anchor" href="#leerdoelen"></a>
 </h2>
 <hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.html" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>What you need to know is that there are three sections required for a
-valid Carpentries lesson:</p>
-<ol style="list-style-type: decimal">
-<li>
-<code>questions</code> are displayed at the beginning of the episode
-to prime the learner for the content.</li>
-<li>
-<code>objectives</code> are the learning objectives for an episode
-displayed with the questions.</li>
-<li>
-<code>keypoints</code> are displayed at the end of the episode to
-reinforce the objectives.</li>
-</ol>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Challenge</span>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?</h3>
-<div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+<p>In deze les leer je hoe je data in spreadsheets beter kunt
+organiseren om er efficiënter mee te kunnen werken. Je leert hoe je
+bestaande data dient te structureren en nieuwe dataverzamelingen beter
+tot stand kunt brengen. De data wordt hierdoor bruikbaarder voor analyse
+en makkelijker uitwisselbaar en koppelbaar met andere datasets. N.B. In
+deze les leer je <em>niet</em> hoe je data analyseert met
+spreadsheets.</p>
+<p>Na afloop van deze module kan de deelnemer:</p>
+<ul>
+<li>Veelvoorkomende opmaakfouten herkennen en voorkomen;</li>
+<li>Eenvoudige kwaliteitscontroles uitvoeren en basisbewerkingen op
+tabulaire gegevens toepassen;</li>
+<li>Gegevens op een correcte wijze exporteren voor gebruik in andere
+applicaties en analyseomgevingen.</li>
+<li>Identificeren wanneer het gebruiken of opstellen van
+referentielijsten/ thesauri van toegevoegde waarde is bij een
+dataset;</li>
+<li>Hoe het beste omgegaan kan worden met het documenteren van
+afbeeldingen.</li>
+</ul>
+<div class="section level3">
+<h3 id="waarom-behandelen-we-geen-data-analyse-in-spreadsheets">Waarom behandelen we geen data-analyse in spreadsheets?<a class="anchor" aria-label="anchor" href="#waarom-behandelen-we-geen-data-analyse-in-spreadsheets"></a>
 </h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
+<ul>
+<li><p>Data-analyse in spreadsheets vereist vaak veel handmatig uit te
+voeren stappen. Wanneer je iets wilt aanpassen of een analyse wilt
+uitvoeren met een nieuwe dataset, moet je doorgaans veel stappen
+handmatig opnieuw uitvoeren.</p></li>
+<li><p>Het is lastig om analyses in spreadsheets te controleren en te
+reproduceren. Wanneer je later je werk opnieuw wilt bekijken of iemand
+om een toelichting op je analyse vraagt, is het vaak moeilijk om precies
+te achterhalen welke stappen zijn uitgevoerd. Dit geldt zowel voor
+statistische analyses als voor het maken van grafieken en
+visualisaties.</p></li>
+</ul>
+<p>Natuurlijk kunnen hier ook scripts voor worden gemaakt, maar dat
+vergt een aanzienlijke basis programmeren, hetgeen voor de beoogde
+doelgroep van deze cursus te ver gaat.</p>
 </div>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Challenge</span>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within
-challenge blocks?</h3>
-<div class="callout-content">
-
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
-</div>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
+</section><section><h2 class="section-heading" id="spreadsheet-software">Spreadsheet software<a class="anchor" aria-label="anchor" href="#spreadsheet-software"></a>
 </h2>
 <hr class="half-width">
-<p>You can use standard markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="callout1" class="callout">
+<p>Om met tabulaire data te werken zijn er verschillende spreadsheet
+software beschikbaar. Omdat de meeste deelnemers waarschijnlijk Excel
+gebruiken, wordt deze software gebruikt bij de voorbeelden in deze
+cursus. Hoewel de exacte functies en opdrachten per programma kunnen
+verschillen kan toch ook met andere software worden gewerkt aangezien de
+onderliggende principes hetzelfde blijven.</p>
+<p>Alternatieven voor excel zijn gegeven op op de <a href="index.html#software">setup pagina</a></p>
+<div id="oefening" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <span class="callout-header">Callout</span>
-<div class="callout-inner">
+<div id="oefening" class="callout-inner">
+<h3 class="callout-title">Oefening</h3>
 <div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
+<ul>
+<li><p>Wie heeft er wel eens gewerkt met spreadsheets?</p></li>
+<li><p>Welke bewerkingen voeren jullie uit in spreadsheets? En voor
+welke bewerkingen denken jullie dat spreadsheets geschikt zijn?</p></li>
+<li><p>Wie heeft er wel eens iets in een spreadsheet gedaan waar hij of
+zij achteraf spijt van had?<br></p></li>
+</ul>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a>
+</section><section><h2 class="section-heading" id="spreadsheets-voor-erfgoeddata">Spreadsheets voor erfgoeddata<a class="anchor" aria-label="anchor" href="#spreadsheets-voor-erfgoeddata"></a>
 </h2>
 <hr class="half-width">
-<p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
+<p>Binnen het erfgoedveld worden spreadsheets veelvuldig gebruikt om
+data over erfgoed objecten, zoals archeologische vondsten, of
+bouwhistorische kenmerken van gebouwen, te verzamelen en te beheren.
+Spreadsheets bieden de mogelijkheid om deze data te ordenen, te
+selecteren en te sorteren. Daarnaast kunnen ze worden gebruikt om
+statitische analyses mee uit te voeren en partronen inzichtelijk te
+maken door bijvoorbeeld het maken van diagrammen of grafieken.</p>
+<p>Erfgoedonderzoek vraagt echter steeds vaker om het combineren van
+gegevens uit verschillende bronnen. Denk bijvoorbeeld aan het koppelen
+van bouwhistorische eigenschappen aan gebouwde rijksmonumenten of losse
+archeologische vondsten aan archeologische opgravingen. Om dergelijke
+koppelingen mogelijk te maken, is het belangrijk dat gegevens
+systematisch worden verzameld en gestructureerd, zodat computers deze
+eenvoudig kunnen lezen en verwerken.</p>
+<p>Doordat spreadsheetsoftware uitgebreide mogelijkheden biedt voor
+opmaak en presentatie, worden gegevens vaak ingericht op een manier die
+voor mensen goed leesbaar is, maar minder geschikt is voor
+geautomatiseerde analyses, verwerking in databases en uitwisseling met
+andere datasets. Voorbeelden van veelvoorkomende problemen zijn dat bij
+het opmaken van een tabel voor een publicatie vaak cellen worden
+samengevoegd waardoor het door de computer niet meer duidelijk is bij
+welke kolom een datapunt hoort. Een andere veelvoorkomende probleem is
+dat op 1 tabblad meerdere tabellen gegeven zijn wat het voor de computer
+moeilijk maakt om deze als afzonderlijke datasets te zien.</p>
+<p>Het opschonen van gegevens (data cleaning) helpt om de verzamelde
+erfgoed data koppelbaar te maken met andere bronnen. Daarnaast zorgt het
+opschonen van gegevens ervoor dat je dataset beter geschikt is om te
+importeren in software voor statistische analyses. In deze module laten
+we, aan de hand van een paar concrete voorbeelden zien hoe je data kan
+opschonen. Daarnaast tonen we verschillende functies van
+spreadsheetprogramma’s om de kwaliteit van je gegevens te controleren en
+verkennende statistische analyses uit te voeren.</p>
+<p>De module bestaat uit de volgende hoofdstukken:</p>
+<p>NOG AANPASSEN AAN HET EINDE 1. <a href="01-format-data.html">Formatting data tables in spreadsheets</a> 2.
+<a href="02-common-mistakes.html">Formatting problems</a> 3. <a href="03-dates-as-data.html">Dates as data</a> 4. <a href="04-quality-control.html">Quality control</a> 5. <a href="05-exporting-data.html">Exporting data</a></p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -553,14 +551,8 @@ this:</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
+<li>Een goede organisatie van de data vormt de basis van elk
+project.</li>
 </ul>
 </div>
 </div>
@@ -716,7 +708,7 @@ en hoe je dit zou kunnen oplossen.</p>
   Oplossing
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>Neem ongeveer 10 minuten de tijd voor deze oefening.</li>
@@ -841,7 +833,7 @@ reinforce the objectives.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Output </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -870,7 +862,7 @@ challenge blocks?</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -1294,7 +1286,7 @@ reinforce the objectives.</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Output </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1323,7 +1315,7 @@ challenge blocks?</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
@@ -1606,8 +1598,8 @@ any links that you are not going to use.
   "url": "https://Digitaal-Erfgoed-Trainingen.github.io/Digitale_geletterdheid_WS1/aio.html",
   "identifier": "https://Digitaal-Erfgoed-Trainingen.github.io/Digitale_geletterdheid_WS1/aio.html",
   "dateCreated": "2026-10-19",
-  "dateModified": "2026-10-27",
-  "datePublished": "2026-10-27"
+  "dateModified": "2026-10-28",
+  "datePublished": "2026-10-28"
 }
 
   </script><script>
