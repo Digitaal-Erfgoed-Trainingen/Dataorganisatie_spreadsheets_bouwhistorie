@@ -1,6 +1,6 @@
 ---
 title: "Veelvoorkomende fouten"
-teaching: 30 # teaching time in minutes
+teaching: 20 # teaching time in minutes
 exercises: 0 # exercise time in minutes
 ---
 
@@ -26,10 +26,9 @@ dataset `historisch-glas-in-gebouwen_messy.xlsx`. Laat cursisten eerst zelf
 fouten zoeken in de dataset en gebruik daarna deze pagina om hun bevindingen
 te bespreken. Je hoeft de fouten niet één voor één te behandelen.
 
-De fouten in de opbouw van de dataset, zoals het ontbreken van een unieke
-code per rij, worden in les twee verder uitgewerkt met relationeel
-datamodelleren en normalisatie. In deze les gebruiken we bewust geen
-vaktermen als *normaalvorm* of *functionele afhankelijkheid*.
+In module 2 gaan we verder met relationele datamodellen en databases. Bepaalde best practices die hier aan bod komen, zoals het gebruik van unieke codes worden in die module essentieel.
+
+In deze module gebruiken we bewust nog geen vaktermen als *normaalvorm* of *functionele afhankelijkheid*.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -99,12 +98,7 @@ naast elkaar, terwijl die niets met elkaar te maken hebben.
 
 **Waarom is dit een probleem?**
 
-- Een computer leest elke rij als één waarneming. Door twee tabellen naast
-  elkaar lijkt het alsof `Datum aangepast` in kolom A ook bij het zwarte glas
-  hoort.
-- Waar de ene tabel ophoudt en de andere begint, ziet alleen een mens.
-  Software ziet één grote tabel met lege kolommen.
-- Kolomnamen komen dubbel voor (`Pand`, `Monumentnr`).
+- Waar de ene tabel ophoudt en de andere begint, ziet alleen een mens. Een computer leest elke rij als één waarneming. In dit geval is dat problematisch.
 - Of het glas blank of zwart is, staat alleen in de kop boven de tabel. Als je
   de tabellen onder elkaar plakt, ben je die informatie kwijt.
 
@@ -135,7 +129,6 @@ heeft een kolom `Dikte` en `Datum onbekend` heeft geen kolom `Datering`.
   zelf staat. Bij opslaan als CSV ben je die kwijt.
 - Wie alles samen wil bekijken, moet de tabbladen eerst samenvoegen. Door de
   verschillende kolommen gaat dat snel mis.
-- Het is niet altijd duidelijk waar iets hoort: komt glas uit het jaar 1900 op
   `voor 1900` of op `Na 1900`?
 
 **Wat kun je beter doen?** Zet alle waarnemingen in één tabel met dezelfde
@@ -211,17 +204,13 @@ plek: buiten de data, op een eigen tabblad of in een eigen bestand.
 
 ### 6. Geen unieke code (Primary Key) per rij
 
-**Voorbeeld.** De enige code in de dataset is het monumentnummer. Maar één
+**Voorbeeld.** Elk glaspaneel (één rij in de dataset) heeft geen unieke identificatiecode. De enige code in de dataset is het monumentnummer. Maar één
 monument kan meerdere ruiten hebben, en panden zonder nummer heten `Woonhuis`,
 `Winkel` of `Restaurant (nu)`.
 
 **Waarom is dit een probleem?**
 
-- Het monumentnummer wijst een **monument** aan, niet een **waarneming**. Er
-  is dus geen kolom waarmee je precies één rij kunt aanwijzen, en dubbele
-  invoer valt niet op.
-- Een naam als `Woonhuis` wijst niet één pand aan: er zijn duizenden
-  woonhuizen.
+- Je kunt nu niet refereren naar één bepaald glaspaneel (één rij in de spreadsheet). Wel naar een monumentnummer, maar voor sommige monumenten zijn meerdere glaspanelen.
 - Om dit op te lossen is in de dataset soms een volgnummer aan het
   monumentnummer geplakt (`459758-1`, `459758-2`). Daardoor kun je de kolom
   niet meer koppelen aan het Rijksmonumentenregister.
@@ -258,16 +247,8 @@ wordt pas een probleem als belangrijke gegevens alleen in een opmerking staan.
 
 ### 8. Meer dan één gegeven in een cel
 
-Zet in elke cel maar één gegeven. Een veelvoorkomend voorbeeld is een getal
-met een eenheid, maar ook een opsomming of een lijstje in één cel zijn
-meerdere gegevens.
 
 **Voorbeeld.** De kolom `Dikte` bevat `0.6-0.8cm`, `6-8mm` en `onbekend`.
-Elders zie je vaak waarden als `1 kg`, `100 gr.` en `250 g` in één kolom.
-In de kolom `Details_01` staat
-`mat gemaakt glas, ontwerp Carl Lion Cachet, uitvoering Fa. Koelewijn`
-(een bewerking, een ontwerper en een uitvoerder) en het lijstje
-`horizontale + verticale prisma's`.
 
 **Waarom is dit een probleem?**
 
@@ -275,11 +256,6 @@ In de kolom `Details_01` staat
   filteren op "dikker dan 5 mm" of een gemiddelde berekenen.
 - Door verschillende eenheden (`cm` en `mm`, of `kg`, `gr.` en `g`) kun je
   waarden niet zomaar vergelijken.
-- `0.6-0.8cm` zijn eigenlijk twee getallen: een minimum en een maximum.
-- Een punt of een komma als decimaalteken wordt niet door elk programma
-  hetzelfde gelezen.
-- Gegevens waarop je wilt zoeken of tellen, zoals "alle ruiten van Lion
-  Cachet" of "alle verticale prisma's", zitten verstopt in vrije tekst.
 
 **Wat kun je beter doen?**
 
@@ -289,12 +265,7 @@ In de kolom `Details_01` staat
   `dikte_max_mm` = `8`.
 - Komen verschillende eenheden echt voor? Gebruik dan een kolom `waarde` met
   alleen getallen en een kolom `eenheid` met een vaste keuzelijst.
-- Geef verschillende gegevens een eigen kolom, zoals `bewerking`, `ontwerper`
-  en `uitvoerder`.
-- Zet een lijstje van hetzelfde soort gegeven op aparte rijen of in een aparte
-  tabel, niet in kolommen als `prisma_1` en `prisma_2`. Zo'n kolom ben je
-  snel ontgroeid zodra er een derde waarde bijkomt.
-- Stel een controle in, zodat alleen getallen kunnen worden ingevoerd (zie
+- Stel een controle in, zodat alleen getallen kunnen worden ingevoerd (zie FIXME
   [Kwaliteitscontrole](04-kwaliteitscontrole.md)).
 
 **Wanneer is het geen probleem?** Als je de waarde alleen wilt laten zien en
@@ -377,7 +348,7 @@ een bestaande thesaurus zoals de
 [Cultuurhistorische Thesaurus](https://thesaurus.cultureelerfgoed.nl/) of de
 [Getty AAT](https://www.getty.edu/research/tools/vocabularies/aat/), en zet
 verschillende soorten informatie in aparte kolommen. Meer hierover staat in
-het hoofdstuk [Referentielijsten gebruiken](06-referentielijsten.md).
+het hoofdstuk FIXME [Referentielijsten gebruiken](06-referentielijsten.md).
 
 ## Samenvatting
 
@@ -411,19 +382,6 @@ De tabel hieronder vat alle fouten samen. Per fout staat erin:
 | 11 | Meerdere dateringsgegevens in één kolom | Begin- en eindjaar in aparte kolommen. | 9 |
 | 12 | Vrije woorden voor categorieën | Gebruik een referentielijst of thesaurus. | 5 |
 
-## Conclusie
-
-Bij het controleren van een dataset kun je naar twee dingen kijken:
-
-- **Opbouw en opmaak van de dataset**: één tabel per werkblad, één dataset in
-  één tabel, één rij kolomnamen, geen informatie in kleur of opmaak, uitleg
-  in een README of data dictionary, en elke rij een unieke code.
-- **Waardes in de cel**: geen cellen als post-it, één gegeven per cel,
-  getallen zonder eenheid, één manier voor ontbrekende waarden, datums als
-  `jjjj-mm-dd` en vaste termen in plaats van vrije woorden.
-
-In les twee gaan we dieper in op de opbouw: hoe ontwerp je een set tabellen
-waarin elk gegeven precies één keer voorkomt?
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
