@@ -49,3 +49,7 @@ docs/
 # translation temp files
 po/*~
 
+
+# OS / IDE files
+.DS_Store
+.idea/
