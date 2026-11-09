@@ -5,7 +5,7 @@ exercises: 2 # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
-- Wat zijn de best practices waaraan data in spreadsheets moet voldoen om bruikbaar te worden voor analayse en koppelbaar te zijn met andere datasets? 
+- Wat zijn de best practices waaraan data in spreadsheets moet voldoen om bruikbaar te worden voor analyse en koppelbaar te zijn met andere datasets? 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
@@ -60,15 +60,6 @@ Erfgoedonderzoek vraagt echter steeds vaker om het combineren van gegevens uit v
 Doordat spreadsheetsoftware uitgebreide mogelijkheden biedt voor opmaak en presentatie, worden gegevens vaak ingericht op een manier die voor mensen goed leesbaar is, maar minder geschikt is voor geautomatiseerde analyses, verwerking in databases en uitwisseling met andere datasets. Voorbeelden van veelvoorkomende problemen zijn dat bij het opmaken van een tabel voor een publicatie vaak cellen worden samengevoegd waardoor het door de computer niet meer duidelijk is bij welke kolom een datapunt hoort. Een andere veelvoorkomende probleem is dat op 1 tabblad meerdere tabellen gegeven zijn wat het voor de computer moeilijk maakt om deze als afzonderlijke datasets te zien. 
 
 Het opschonen van gegevens (data cleaning) helpt om de verzamelde erfgoed data koppelbaar te maken met andere bronnen. Daarnaast zorgt het opschonen van gegevens ervoor dat je dataset beter geschikt is om te importeren in software voor statistische analyses. In deze module laten we, aan de hand van een paar concrete voorbeelden zien hoe je data kan opschonen. Daarnaast tonen we verschillende functies van spreadsheetprogramma’s om de kwaliteit van je gegevens te controleren en verkennende statistische analyses uit te voeren.
-
-De module bestaat uit de volgende hoofdstukken:
-
-NOG AANPASSEN AAN HET EINDE
-1. [Formatting data tables in spreadsheets](01-format-data.md)
-2. [Formatting problems](02-common-mistakes.md)
-3. [Dates as data](03-dates-as-data.md)
-4. [Quality control](04-quality-control.md)
-5. [Exporting data](05-exporting-data.md)
 
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
