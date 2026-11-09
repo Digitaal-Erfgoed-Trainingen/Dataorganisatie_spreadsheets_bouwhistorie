@@ -12,8 +12,8 @@ exercises: 20 # exercise time in minutes
 - De geleerde *best pracices* toepassen op een *real-life' dataset
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-In deze les hebben we een aantal *best practices* geleerd over het organiseren van data in spreadsheets.
-Die ga je nu toepassen op je eigen dataset.
+In deze module hebben we een aantal *best practices* geleerd over het organiseren van data in spreadsheets.
+Nu is het zaak deze toe te passen op je eigen dataset. 
 
 ::: callout
 ## Geen eigen dataset?
@@ -33,6 +33,7 @@ Gebruik voor deze opdracht je eigen dataset of de dataset hierboven.
 Maak een lijst van verbeterpunten op basis van de vragen hieronder.
 **NB: het is heel verleidelijk om meteen aan de slag te gaan en de verbeteringen die je ziet meteen door te voeren. 
 Dat is niet de bedoeling van deze opdracht, maar is natuurlijk wel iets waar je thuis mee aan de slag kunt gaan.**
+
 1. Kun je de opmaak en indeling van jouw eigen dataset verbeteren? Zie [hoofdstuk 2: Data opmaken in spreadsheets](02-opmaak.md). 
 Scroll nog eens door de [meestvoorkomende fouten](03-meestvoorkomende-fouten.md) om te zien of er nog verbeterpunten zijn. 
 Schrijf ook dingen op die al goed zijn!
@@ -49,7 +50,7 @@ Bespreek je lijst met verbeterpunten met een mede-cursist die ook al klaar is me
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Met een paar simpele verbeteringen kun je een dataset veel bruikbaarder maken voor jezelf, andere mensen en voor analyse-toepassingen   
+- Met een paar simpele verbeteringen kun je een dataset veel bruikbaarder maken voor jezelf, andere mensen en voor analyse-toepassingen.   
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
