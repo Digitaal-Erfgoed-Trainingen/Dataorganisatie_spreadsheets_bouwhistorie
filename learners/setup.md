@@ -22,7 +22,7 @@ De data is beschikbaar onder een CC-BY-licentie en mogen dus met bronvermelding 
 Om met spreadsheets te werken, kun je LibreOffice, Microsoft Excel, Gnumeric, OpenOffice.org of andere programma's gebruiken. 
 De opdrachten kunnen per programma enigszins verschillen, maar de algemene principes voor het werken met spreadsheets blijven hetzelfde.
 
-Als je nog geen spreadsheetprogramma hebt, kun je voor deze les LibreOffice gebruiken. Dit is een gratis, opensource spreadsheetprogramma.
+Als je nog geen spreadsheetprogramma hebt, kun je voor deze module LibreOffice gebruiken. Dit is een gratis, opensource spreadsheetprogramma.
 
 ::: tab
 

@@ -14,8 +14,8 @@ Aan de hand van bovengenoemde casuïstiek wordt in deze module een dataset over 
 De cursus is bedoeld als basiscursus voor iedereen die met tabulaire data werkt. De casuïstiek is weliswaar glas voor bouwhistorie, maar de lessen zijn ook bruikbaar voor andere (sub) domeinen. 
 
 ## Leerdoelen 
-In deze les leer je hoe je over dataorganisatie kunt nadenken en welke werkwijzen je kunt toepassen om data efficiënter te verwerken. Met deze aanpak kun je bestaande data beter structureren en nieuwe dataverzameling beter plannen, zodat je achteraf minder tijd kwijt bent aan het opschonen en organiseren van data. 
-In deze les leer je *niet* hoe je data analyseert met spreadsheets.
+In deze module leer je hoe je over dataorganisatie kunt nadenken en welke werkwijzen je kunt toepassen om data efficiënter te verwerken. Met deze aanpak kun je bestaande data beter structureren en nieuwe dataverzameling beter plannen, zodat je achteraf minder tijd kwijt bent aan het opschonen en organiseren van data. 
+In deze module leer je *niet* hoe je data analyseert met spreadsheets.
 
 Na afloop van deze module kan de deelnemer:
 
@@ -40,7 +40,7 @@ Je hebt wel data en software nodig, volg daarom om te beginnen de instructies [h
 
 ## Voor docenten
 
-Geef je deze les tijdens een workshop? Raadpleeg dan de [docentenhandleiding](instructors/instructor-notes.md).
+Geef je deze module tijdens een workshop? Raadpleeg dan de [docentenhandleiding](instructors/instructor-notes.md).
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
