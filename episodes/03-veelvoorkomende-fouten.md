@@ -26,7 +26,7 @@ dataset `historisch-glas-in-gebouwen_messy.xlsx`. Laat cursisten eerst zelf
 fouten zoeken in de dataset en gebruik daarna deze pagina om hun bevindingen
 te bespreken. Je hoeft de fouten niet één voor één te behandelen.
 
-In module 2 gaan we verder met relationele datamodellen en databases. Bepaalde best practices die hier aan bod komen, zoals het gebruik van unieke codes worden in die module essentieel.
+In module 2 gaan we verder met relationele datamodellen en databases. Bepaalde best practices die hier aan bod komen, zoals het gebruik van unieke identificatiecodes (UIDs) worden in die module essentieel.
 
 In deze module gebruiken we bewust nog geen vaktermen als *normaalvorm* of *functionele afhankelijkheid*.
 
@@ -59,7 +59,7 @@ ligt. Een eenheid haal je bijvoorbeeld uit de cel en zet je in de kolomnaam.
   ruit in één monument.
 - **Kolom**: één eigenschap, bijvoorbeeld de soort glas of de dikte.
 - **Cel**: het snijpunt van een rij en een kolom. Bevat één waarde.
-- **Unieke code (ID)**: een code waarmee je precies één rij aanwijst, zoals
+- **Unieke Identificatiecode (UID)**: een code waarmee je precies één rij aanwijst, zoals
   een klantnummer of een monumentnummer. In databases heet dit een **key**.
 - **Referentielijst**: een vaste lijst met toegestane waarden, zoals een
   lijst van glassoorten.
@@ -67,26 +67,6 @@ ligt. Een eenheid haal je bijvoorbeeld uit de cel en zet je in de kolomnaam.
   hoe.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Overzicht
-
-| # | Fout |
-|---|------|
-| | **Opbouw en opmaak van de dataset** |
-| 1 | Meerdere tabellen op één werkblad |
-| 2 | Meerdere tabbladen voor dezelfde data |
-| 3 | Opmaak gebruiken om informatie vast te leggen |
-| 4 | Opmaak om de tabel mooi te maken |
-| 5 | Metadata en uitleg in de tabel |
-| 6 | Geen unieke code per rij |
-| | **Waardes in de cel** |
-| 7 | Opmerkingen in een cel |
-| 8 | Meer dan één gegeven in een cel |
-| 9 | Onbekende en ontbrekende waarden |
-| 10 | Datums die niet overal hetzelfde zijn opgemaakt |
-| 11 | Meerdere dateringsgegevens in één kolom |
-| 12 | Vrije woorden voor categorieën |
-
 ## Opbouw en opmaak van de dataset
 
 ### 1. Meerdere tabellen op één werkblad
@@ -202,9 +182,9 @@ en maak die op.
 **Wanneer is het geen probleem?** Uitleg is waardevol. Het gaat alleen om de
 plek: buiten de data, op een eigen tabblad of in een eigen bestand.
 
-### 6. Geen unieke code (Primary Key) per rij
+### 6. Geen Unieke Identificatiecodes per rij
 
-**Voorbeeld.** Elk glaspaneel (één rij in de dataset) heeft geen unieke identificatiecode. De enige code in de dataset is het monumentnummer. Maar één
+**Voorbeeld.** De verschillende waarnemingen (rijen in de dataset) hebben geen Unieke Identificatiecode (UID). Er is wel de kolom `monumentnummer`. Maar één
 monument kan meerdere ruiten hebben, en panden zonder nummer heten `Woonhuis`,
 `Winkel` of `Restaurant (nu)`.
 
@@ -222,7 +202,7 @@ monument kan meerdere ruiten hebben, en panden zonder nummer heten `Woonhuis`,
   `GLAS-0001`, `GLAS-0002`, …
 - Zet het monumentnummer in een eigen kolom, altijd op dezelfde manier
   geschreven en alleen als getal. Het verwijst naar het monument.
-- Gebruik geen namen of omschrijvingen als unieke code.
+- Gebruik geen namen of omschrijvingen als UID.
 
 ## Waardes in de cel
 
@@ -350,45 +330,12 @@ een bestaande thesaurus zoals de
 verschillende soorten informatie in aparte kolommen. Meer hierover staat in
 het hoofdstuk FIXME [Referentielijsten gebruiken](06-referentielijsten.md).
 
-## Samenvatting
-
-De tabel hieronder vat alle fouten samen. Per fout staat erin:
-
-- **Fout**: de naam van de fout, zoals hierboven besproken.
-- **Oplossing in het kort**: wat je in plaats daarvan kunt doen.
-- **RCE Datakwaliteitsrichtlijn**: het nummer van de kwaliteitsdimensie uit
-  Tabel 2 van de Datakwaliteitsrichtlijnen van de RCE (versie 1.0) waar de
-  fout het meest bij past. De gebruikte dimensies zijn:
-  1 = unieke identificatie en referentiële integriteit,
-  2 = structurele consistentie,
-  4 = granulariteit en eenduidige representatie,
-  5 = semantische eenduidigheid en interoperabiliteit en
-  9 = temporele resolutie.
-
-| # | Fout | Oplossing in het kort | RCE Datakwaliteitsrichtlijn |
-|---|------|------|---|
-| | **Opbouw en opmaak van de dataset** | | |
-| 1 | Meerdere tabellen op één werkblad | Eén tabel per werkblad; data van hetzelfde soort onder elkaar. | 2 |
-| 2 | Meerdere tabbladen voor dezelfde data | Zet alles in één tabel en voeg een kolom toe. Filter wanneer nodig op die kolom. | 2 |
-| 3 | Opmaak gebruiken om informatie vast te leggen | Leg informatie vast in een kolom, niet in een kleur. | 2 |
-| 4 | Opmaak om de tabel mooi te maken | Geen samengevoegde cellen, titels of lege rijen in de tabel. | 2 |
-| 5 | Metadata en uitleg in de tabel | Zet uitleg in een README of data dictionary. | 5 |
-| 6 | Geen unieke code per rij | Elke rij een eigen, unieke code die nooit leeg is. | 1 |
-| | **Waardes in de cel** | | |
-| 7 | Opmerkingen in een cel | Twijfel in een eigen kolom; toelichting in een opmerkingenkolom. | 4 |
-| 8 | Meer dan één gegeven in een cel | Eén gegeven per cel: eenheid in de kolomnaam, lijstjes op aparte rijen. | 2 |
-| 9 | Onbekende en ontbrekende waarden | Kies één manier, bij voorkeur een lege cel. | 2 |
-| 10 | Datums die niet overal hetzelfde zijn opgemaakt | Eén notatie, bij voorkeur `jjjj-mm-dd`. | 9 |
-| 11 | Meerdere dateringsgegevens in één kolom | Begin- en eindjaar in aparte kolommen. | 9 |
-| 12 | Vrije woorden voor categorieën | Gebruik een referentielijst of thesaurus. | 5 |
-
-
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
 - Zet één dataset in één doorlopende tabel; gebruik aparte tabellen alleen voor verschillende soorten dingen.
 - Leg informatie vast in kolommen, niet in kleur of opmaak.
 - Zet uitleg en metadata buiten de data, in een README of data dictionary.
-- Geef elke rij een unieke code die nooit leeg is en niet verandert.
+- Geef elke rij een Unieke Identificatiecode die nooit leeg is en niet verandert.
 - Zet één gegeven per cel: getallen zonder eenheid, lijstjes op aparte rijen en datums als `jjjj-mm-dd`.
 - Kies één manier voor ontbrekende waarden.
 - Gebruik een referentielijst of thesaurus voor categorieën.
