@@ -7,7 +7,7 @@ exercises: 15
 ::::::::::::::::::::::::::::::::::::::: objectives
 
 - Een goed online platform kiezen om mijn data te publiceren.
-- Data zo publiceren dat ze Vindbaar, Toegankelijk, Interoperabel en Herbruikbaar is. 
+- Data zo publiceren dat ze Vindbaar, Toegankelijk, Interoperabel en Herbruikbaar zijn. 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -20,44 +20,44 @@ exercises: 15
 
 ::: discussion
 ## Data publiceren
-Wie heeft er een dataset gepubliceerd? 
+Wie heeft er wel eens een dataset gepubliceerd? 
 Waar staat de data? Hoe zorg je dat anderen de data vinden en effectief kunnen gebruiken? 
 
 Wat zijn redenen om data niet te delen/publiceren?
 :::
 
 ## Doelgroep & usecase
-Stel jezelf voordat je data publiceert de volgende vragen:
+Stel jezelf de volgende vragen voordat je data publiceert:
 1. Wie is de doelgroep? Wie verwacht je dat de data gaat gebruiken?
-2. Wat is de usecase? Waar verwacht je dat anderen de data voor gaan gebruiken?
+2. Waarvoor verwacht je dat de data gebruikt gaat worden? 
 
-Afhankelijk van deze vragen zal de manier waarop je je data publiceert er heel anders uitzien.
-Een paar voorbeelden:
-
-FIXME links naar real-life voorbeelden geven
+Afhankelijk van deze vragen zal de manier waarop je je data publiceert er anders uitzien. 
 
 ## Vindbare, Toegankelijke, Interoperabele en Herbruikbare data (FAIR principes)
 Bij het publiceren van data kunnen de [FAIR data principes](https://www.go-fair.org/fair-principles/) een handige 
-richtlijn zijn. Nogmaals, afhankelijk van je doelgroep en usecase zul je hier verschillende keuzes in maken.
+richtlijn zijn. Nogmaals, afhankelijk van je doelgroep en casuïstiek zul je hier verschillende keuzes in maken.
 
 ### Vindbaar (**F**indable)
-Zorg dat anderen de data makkelijk kunnen vinden of doorzoeken.
+Zorg dat anderen de data makkelijk kunnen vinden of doorzoeken. Het gaat daarbij om informatie die gebruikers nodig hebben voordat ze je data gebruiken. Dit wordt ook wel de metadata genoemd.
 
-- Gebruik een goed online platform zodat de data makkelijk vindbaar is. FIXME aanpassen!
+- Beschrijf je data met metadata. De matadata van je data zijn gestructureerde gegevens die de kenmerken van
+een dataset beschrijven. Het zorgt ervoor dat andere gebruikers (en zoekmachines) een beeld krijgen van je data zonder dat ze de data zelf hoeven te bekijken.
+Idealiter gebruik je voor de metadata een standaardformat zoals [DCAT-ap-nl30](https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/), maar dit is ook weer afhankelijk van waar je de data publiceert en welke doelgroep je wilt dat je data kan gebruiken.  
+- Maak duidelijk welke versie van je data de publicatie betreft. 
+- Gebruik het liefst een *globally unique and persistent identifier*. 
+Dit is een unieke URL/URI die altijd naar jouw data verwijst. Met deze URL/URI kun je ook expliciet verwijzen naar een bepaalde versie van de data. Afhankelijk van waar de data wordt gepubliceerd wordt automatisch zo'n identifier aangemaakt. 
+
+Het juiste platform vinden voor data die je wilt publiceren is niet eenvoudig. Voor vrijwilligers in het Erfgoedveld is het raadzaam contact te zoeken met [erfgoed coaches]( https://netwerkdigitaalerfgoed.nl/datawerkplaatsen/) vanuit het Netwerk Digitaal Erfgoed. Zij kunnen adviseren waar de verzamelde data het best gepubliceerd kan worden. Het zou bijvoorbeeld kunnen dat data bij de [Rijksdienst voor het Cultureel Erfgoed](https://www.cultureelerfgoed.nl/) gepubliceerd kan worden, of bij een van de nationale of provinciale archieven. Voor archeologische datasets bestaat het [Portable Antiquities of the Netherlands](https://portable-antiquities.nl/pan/#/public) platform. 
+
+Bij het aanleveren van datasets helpt het enorm wanneer de data van een goede kwaliteit zijn, oftewel wanneer de lessen uit deze module succesvol zijn toegepast!
+
+Voor data voortkomend uit (wetenschappelijk) onderzoek worden de volgende platformen gebruikt. Deze platformen kunnen in theorie ook relevant zijn voor data verzameld door vrijwilligers. 
   - Dataverse (https://dataverse.nl/dataverse/RCE)
-  - Datastation SSH (https://ssh.datastations.nl/) van DANS
+  - Datastation SSH (https://ssh.datastations.nl/) van [DANS](https://dans.knaw.nl/nl/)
   - Zenodo (https://zenodo.org/)
-  - Een eigen gebouwd platform. Meer werk, maar ook meer flexibiliteit.
-- Beschrijf je data met metadata. Data over data, wat metadata genoemd wordt, zijn gestructureerde gegevens die de kenmerken van
-je dataset beschrijven. Het zorgt ervoor dat andere gebruikers (en zoekmachines) een beeld krijgen van je data zonder dat ze de data zelf hoeven te bekijken.
-Idealiter gebruik je voor de metadata een standaardformat zoals [DCAT-ap-nl30](https://docs.geostandaarden.nl/dcat/dcat-ap-nl30/), 
-afhankelijk van de usecase kan dit ook overkill zijn.  
-- Maak duidelijk welke versie van je data de publicatie betreft. Gebruik het liefst een *globally unique and persistent identifier*. 
-Dit is een unieke URL die altijd naar jouw data verwijst. Met deze URL kun je expliciet verwijzen naar een bepaalde versie van de data.
-Als je publiceert op één van de bovenstaande platformen, wordt meestal automatisch zo'n identifier aangemaakt. 
 
 ### Toegankelijk (**A**ccessible)
-Maak de data publiek toegankelijk of beschrijf hoe je toegang tot de data kunt verkrijgen.
+Maak de data publiek toegankelijk of beschrijf hoe je toegang tot de data kunt verkrijgen. Dit hangt wederom af van het gevonden/ gekozen platform waar de data wordt gepubliceerd, maar ook van de licentie (zie hieronder meer informatie over licenties).
 
 ### Interoperabel (**I**nteroperable)
 Zorg dat de dataset interoperabel (koppelbaar, uitwisselbaar) is met andere datasets.
@@ -86,11 +86,16 @@ De meest voorkomende licenties en een korte samenvatting van hun eigenschappen z
 | **CC0** | Geen rechten voorbehouden (publiek domein). Hergebruik zonder voorwaarden. |
 | **CC BY** | Alles mag, mits je de bron vermeldt. |
 | **CC BY-NC** | Bronvermelding verplicht, geen commercieel gebruik. |
+*Een uitgebreid overzicht van verschillende licenties op data en software is [hier](https://creativecommons.nl/uitleg/) te vinden.* 
+
+Wanneer een dataset wordt gepubliceerd in een doorzoekbare metadata catalogus/datasetregister zoals [data.overheid](https://data.overheid.nl/data) voor overheidsdata of het [datasetregister](https://datasetregister.netwerkdigitaalerfgoed.nl/datasets) van het [Netwerk Digitaal Erfgoed](https://netwerkdigitaalerfgoed.nl/) is het toekennen van een licentie verplicht. 
+
+*N.B. Bij het invullen van de metadata hebben deze registers dus gebruik gemaakt van referentielijsten met de verschillende keuzes voor licenties (net zoals we dat in hoofdstuk 6 hebben gedaan bij de referentielijsten!)* 
 
 Check ook of je in jouw dataset gebruik maakt van bronnen die een bepaalde licentie hebben!
 
 Dit lesmateriaal heeft de licentie CC BY, omdat we vinden dat iedereen dit lesmateriaal moet kunnen hergebruiken, 
-maar we daar wel graag de credits voor willen ontvangen.   
+maar we daar wel graag de credits voor willen ontvangen.
 
 :::
 
@@ -99,9 +104,10 @@ maar we daar wel graag de credits voor willen ontvangen.
 Gebruik voor deze opdracht jouw eigen dataset of de real-life dataset die je in het eerste deel van de cursus hebt gebruikt.
 Ga ervan uit dat je de data gaat publiceren. Als je data al gepubliceerd is, schrijf dan eventuele verbeteringen op.
 
-1. Wie is de doelgroep? Wat zijn verwachte usecases?
-2. Waar zet je de data?
-3. Hoe zorg je ervoor dat de data-publicatie aan de FAIR principes voldoet?
+1. Wie is de doelgroep? 
+2. Waarvoor verwacht je dat de data gebruikt kan worden?
+3. Waar zet je de data?
+4. Hoe zorg je ervoor dat de data-publicatie aan de FAIR principes voldoet?
 
 :::: solution
 Bespreek je antwoorden met degene naast je.
@@ -110,5 +116,5 @@ Bespreek je antwoorden met degene naast je.
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Publiceer de data zo dat ze Vindbaar, Toegankelijk, Interoperabel en Herbruikbaar is (FAIR).
-- Houd altijd rekening met voor wie je de data publiceert en waarom (doelgroep & usecase).
+- Houd altijd rekening met voor wie je de data publiceert en waarom (doelgroep & gebruik).
 ::::::::::::::::::::::::::::::::::::::::::::::::::
