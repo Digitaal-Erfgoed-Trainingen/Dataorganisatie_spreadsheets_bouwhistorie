@@ -61,15 +61,6 @@ Doordat spreadsheetsoftware uitgebreide mogelijkheden biedt voor opmaak en prese
 
 Het opschonen van gegevens (data cleaning) helpt om de verzamelde erfgoed data koppelbaar te maken met andere bronnen. Daarnaast zorgt het opschonen van gegevens ervoor dat je dataset beter geschikt is om te importeren in software voor statistische analyses. In deze module laten we, aan de hand van een paar concrete voorbeelden zien hoe je data kan opschonen. Daarnaast tonen we verschillende functies van spreadsheetprogramma’s om de kwaliteit van je gegevens te controleren en verkennende statistische analyses uit te voeren.
 
-De module bestaat uit de volgende hoofdstukken:
-
-NOG AANPASSEN AAN HET EINDE
-1. [Formatting data tables in spreadsheets](01-format-data.md)
-2. [Formatting problems](02-common-mistakes.md)
-3. [Dates as data](03-dates-as-data.md)
-4. [Quality control](04-quality-control.md)
-5. [Exporting data](05-exporting-data.md)
-
 :::::::::::::::::::::::::::::::::::::::: keypoints
 
 - Een goede organisatie van de data vormt de basis van elk project.
