@@ -5,7 +5,7 @@ exercises: 2 # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
-- Wat zijn de best practices waaraan data in spreadsheets moet voldoen om bruikbaar te worden voor analayse en koppelbaar te zijn met andere datasets? 
+- Wat zijn de best practices waaraan data in spreadsheets moet voldoen om bruikbaar te worden voor analyse en koppelbaar te zijn met andere datasets? 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
