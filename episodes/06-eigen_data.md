@@ -1,5 +1,5 @@
 ---
-title: "Afsluiting"
+title: "Aan de slag met eigen data!"
 teaching: 5 # teaching time in minutes
 exercises: 20 # exercise time in minutes
 ---
