@@ -5,12 +5,12 @@ exercises: 2 # exercise time in minutes
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
-- Wat zijn de basisprincipes voor het gebruik van spreadsheets voor goede gegevensorganisatie?
+- Wat zijn de best practices voor het gebruik van spreadsheets voor goede gegevensorganisatie?
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Beschrijf de basisprincipes voor het gebruik van spreadsheets voor goede gegevensorganisatie.
+- Beschrijf de best practices voor het gebruik van spreadsheets voor goede gegevensorganisatie.
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Introduction

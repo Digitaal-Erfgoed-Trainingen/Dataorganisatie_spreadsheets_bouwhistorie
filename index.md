@@ -8,7 +8,7 @@ zoals programmeertalen (zoals R of Python), of een database, moeten we onze data
 
 In deze module staat historisch glas centraal. Veel historische gebouwen bevatten uiteenlopende soorten glas, zoals glas in lood ramen in monumentale kerken of draadglas in bijvoorbeeld monumentale schoolgebouwen uit de jaren 1950. Een doorzoekbaar volledig overzicht van welke bouwhistorisch relevante gebouwen welke typen glas bevatten bestaat nog niet, maar is wel behoefte aan. Vanuit verschillende kanten worden hier initiatieven op vormgeven.
 
-Aan de hand van bovengenoemde casuïstiek wordt in deze module een dataset over glas nader bestudeerd. Om deze data bruikbaar te maken voor analyse en ook koppelbaar met andere databronnen dient de data aan een aantal basisprincipes te voldoen. Op basis van concrete voorbeelden leert de deelnemer keuzes te maken hoe data te organiseren. 
+Aan de hand van bovengenoemde casuïstiek wordt in deze module een dataset over glas nader bestudeerd. Om deze data bruikbaar te maken voor analyse en ook koppelbaar met andere databronnen dient de data aan een aantal best practices te voldoen. Op basis van concrete voorbeelden leert de deelnemer keuzes te maken hoe data te organiseren. 
 
 ## Doelgroep
 De cursus is bedoeld als basiscursus voor iedereen die met tabulaire data werkt. De casuïstiek is weliswaar glas voor bouwhistorie, maar de lessen zijn ook bruikbaar voor andere (sub) domeinen. 
