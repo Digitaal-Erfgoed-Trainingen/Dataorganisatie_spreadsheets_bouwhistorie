@@ -33,11 +33,9 @@ De dataset bestaat uit 2 bestanden, download ze beide:
 - [historisch-glas-in-gebouwen_real-life_gebouw.xlsx](https://github.com/Digitaal-Erfgoed-Trainingen/Dataorganisatie_spreadsheets_bouwhistorie/raw/refs/heads/main/data/historisch-glas-in-gebouwen_real-life_gebouw.xlsx)
 - [historisch-glas-in-gebouwen_real-life_glasobject.xlsx](https://github.com/Digitaal-Erfgoed-Trainingen/Dataorganisatie_spreadsheets_bouwhistorie/raw/refs/heads/main/data/historisch-glas-in-gebouwen_real-life_glasobject.xlsx)
 
-FIXME: deze dataset is tot stand gekomen bla bla 
-Dit is de dataset zoals die nu in real-life wordt gebruikt door de auteurs, 
-er is alleen een kolom met persoonlijke email-adressen uitgehaald.
+Deze dataset is gecreëerd door Roelof van der Tak & Bert van Rest en gemanipuleerd voor educatieve doeleinden. Het eerste bestand, `..._gebouw.xlsx`, bevat gegevens over gebouwen waarin historisch glas is aangetroffen. Het tweede bestand `..._glasobject.xlsx` bevat gegevens over glasobjecten zelf. Een gebouw kan meerdere glasobjecten bevatten. 
 
-FIXME citatie
+> Van der Tak & Bert van Rest, Monumentale glaskunst van Nederland.
 
 ## Software
 Om met spreadsheets te werken, kun je LibreOffice, Microsoft Excel, Gnumeric, OpenOffice.org of andere programma's gebruiken. 
