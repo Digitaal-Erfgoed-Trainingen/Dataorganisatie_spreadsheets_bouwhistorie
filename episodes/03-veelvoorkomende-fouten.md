@@ -245,8 +245,7 @@ wordt pas een probleem als belangrijke gegevens alleen in een opmerking staan.
   `dikte_max_mm` = `8`.
 - Komen verschillende eenheden echt voor? Gebruik dan een kolom `waarde` met
   alleen getallen en een kolom `eenheid` met een vaste keuzelijst.
-- Stel een controle in, zodat alleen getallen kunnen worden ingevoerd (zie FIXME
-  [Kwaliteitscontrole](04-kwaliteitscontrole.md)).
+- Stel een controle in, zodat alleen getallen kunnen worden ingevoerd (zie [hoofdstuk 4: Kwaliteitscontrole, referentielijsten & publieke thesauri](04-kwaliteitscontrole.md)).
 
 **Wanneer is het geen probleem?** Als je de waarde alleen wilt laten zien en
 er nooit mee rekent, is `250 g` minder erg. Maar meestal wil je later toch
@@ -328,7 +327,7 @@ een bestaande thesaurus zoals de
 [Cultuurhistorische Thesaurus](https://thesaurus.cultureelerfgoed.nl/) of de
 [Getty AAT](https://www.getty.edu/research/tools/vocabularies/aat/), en zet
 verschillende soorten informatie in aparte kolommen. Meer hierover staat in
-het hoofdstuk FIXME [Referentielijsten gebruiken](06-referentielijsten.md).
+[hoofdstuk 4: Kwaliteitscontrole, referentielijsten & publieke thesauri](04-kwaliteitscontrole.md).
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 

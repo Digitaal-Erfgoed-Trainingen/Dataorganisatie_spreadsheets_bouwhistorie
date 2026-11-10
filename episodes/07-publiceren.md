@@ -52,6 +52,7 @@ Het juiste platform vinden voor data die je wilt publiceren is niet eenvoudig. V
 Bij het aanleveren van datasets helpt het enorm wanneer de data van een goede kwaliteit zijn, oftewel wanneer de lessen uit deze module succesvol zijn toegepast!
 
 Voor data voortkomend uit (wetenschappelijk) onderzoek worden de volgende platformen gebruikt. Deze platformen kunnen in theorie ook relevant zijn voor data verzameld door vrijwilligers. 
+
   - Dataverse (https://dataverse.nl/dataverse/RCE)
   - Datastation SSH (https://ssh.datastations.nl/) van [DANS](https://dans.knaw.nl/nl/)
   - Zenodo (https://zenodo.org/)
@@ -65,8 +66,8 @@ Zorg dat de dataset interoperabel (koppelbaar, uitwisselbaar) is met andere data
 - Gebruik gestandardiseerde vocabulair en identificering. Bijvoorbeeld:
   - Gebruik het monumentnummer vanuit het monumentregister, 
   zodat de data gekoppeld kan worden aan andere datasets die dezelfde standaard nummering gebruiken.
-  - Gebruik publieke thesauri (FIXME: referentie naar episode 4) zodat bepaalde glastechnieken 
-  met dezelfde term worden aangeduid als in andere datasets.
+  - Gebruik publieke thesauri, zodat bepaalde glastechnieken 
+  met dezelfde term worden aangeduid als in andere datasets (zie [hoofdstuk 4: Kwaliteitscontrole, referentielijsten & publieke thesauri](04-kwaliteitscontrole.md)).
 
 ### Herbruikbaar (**R**eusable)
 Zorg dat anderen de data kunnen gebruiken.
@@ -90,7 +91,7 @@ De meest voorkomende licenties en een korte samenvatting van hun eigenschappen z
 
 Wanneer een dataset wordt gepubliceerd in een doorzoekbare metadata catalogus/datasetregister zoals [data.overheid](https://data.overheid.nl/data) voor overheidsdata of het [datasetregister](https://datasetregister.netwerkdigitaalerfgoed.nl/datasets) van het [Netwerk Digitaal Erfgoed](https://netwerkdigitaalerfgoed.nl/) is het toekennen van een licentie verplicht. 
 
-*N.B. Bij het invullen van de metadata hebben deze registers dus gebruik gemaakt van referentielijsten met de verschillende keuzes voor licenties (net zoals we dat in hoofdstuk 6 hebben gedaan bij de referentielijsten!)* 
+*N.B. Bij het invullen van de metadata hebben deze registers dus gebruik gemaakt van referentielijsten met de verschillende keuzes voor licenties (net zoals we dat in hoofdstuk 4 hebben gedaan bij de referentielijsten!)* 
 
 Check ook of je in jouw dataset gebruik maakt van bronnen die een bepaalde licentie hebben!
 

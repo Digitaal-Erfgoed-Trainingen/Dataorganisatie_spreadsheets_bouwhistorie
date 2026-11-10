@@ -9,7 +9,7 @@ exercises: 20 # exercise time in minutes
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
-- De geleerde *best pracices* toepassen op een *real-life' dataset
+- De geleerde *best practices* toepassen op een real-life dataset
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 In deze module hebben we een aantal *best practices* geleerd over het organiseren van data in spreadsheets.
@@ -35,10 +35,10 @@ Maak een lijst van verbeterpunten op basis van de vragen hieronder.
 Dat is niet de bedoeling van deze opdracht, maar is natuurlijk wel iets waar je thuis mee aan de slag kunt gaan.**
 
 1. Kun je de opmaak en indeling van jouw eigen dataset verbeteren? Zie [hoofdstuk 2: Data opmaken in spreadsheets](02-opmaak.md). 
-Scroll nog eens door de [meestvoorkomende fouten](03-meestvoorkomende-fouten.md) om te zien of er nog verbeterpunten zijn. 
+Scroll nog eens door de [veelvoorkomende fouten](03-veelvoorkomende-fouten.md) om te zien of er nog verbeterpunten zijn. 
 Schrijf ook dingen op die al goed zijn!
-2. Kun je met behulp van datavalidatie de toekomstige data verzameling verbeteren? Zie [hoofdstuk 4: FIXME](FIXME)
-3. Kun je met het gebruik van referentielijsten/thesauri je dataset minder foutgevoelig maken en bruikbaarder maken voor anderen? Zie [hoofdstuk 4: FIXME](FIXME)
+2. Kun je met behulp van datavalidatie de toekomstige data verzameling verbeteren? Zie [hoofdstuk 4: Kwaliteitscontrole, referentielijsten & publieke thesauri](04-kwaliteitscontrole.md)
+3. Kun je met het gebruik van referentielijsten/thesauri je dataset minder foutgevoelig maken en bruikbaarder maken voor anderen? Zie [hoofdstuk 4: Kwaliteitscontrole, referentielijsten & publieke thesauri](04-kwaliteitscontrole.md)
 4. Exporteer de data naar een tekstbestand, zoals CSV (*comma-separated values*). Zie [hoofdstuk 5: Data exporteren](05-export.md).
 5. (Bonus) Laad het tekstbestand (zoals CSV) in je favoriete database-software, programmeertaal of analyse-omgeving.
 
