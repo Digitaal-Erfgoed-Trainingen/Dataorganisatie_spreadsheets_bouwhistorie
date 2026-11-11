@@ -26,7 +26,7 @@ dataset `historisch-glas-in-gebouwen_messy.xlsx`. Laat cursisten eerst zelf
 fouten zoeken in de dataset en gebruik daarna deze pagina om hun bevindingen
 te bespreken. Je hoeft de fouten niet één voor één te behandelen.
 
-In module 2 gaan we verder met relationele datamodellen en databases. Bepaalde best practices die hier aan bod komen, zoals het gebruik van unieke identificatiecodes (UIDs) worden in die module essentieel.
+In module 2 gaan we verder met relationele datamodellen en databases. Bepaalde *best practices* die hier aan bod komen, zoals het gebruik van unieke identificatiecodes (UIDs) worden in die module essentieel.
 
 In deze module gebruiken we bewust nog geen vaktermen als *normaalvorm* of *functionele afhankelijkheid*.
 
@@ -60,7 +60,7 @@ ligt. Een eenheid haal je bijvoorbeeld uit de cel en zet je in de kolomnaam.
 - **Kolom**: één eigenschap, bijvoorbeeld de soort glas of de dikte.
 - **Cel**: het snijpunt van een rij en een kolom. Bevat één waarde.
 - **Unieke Identificatiecode (UID)**: een code waarmee je precies één rij aanwijst, zoals
-  een klantnummer of een monumentnummer. In databases heet dit een **key**.
+  een klantnummer of een monumentnummer. In databases heet dit een **sleutel** of **key**.
 - **Referentielijst**: een vaste lijst met toegestane waarden, zoals een
   lijst van glassoorten.
 - **Metadata**: data over je data, zoals wie ze heeft verzameld, wanneer en
@@ -73,7 +73,7 @@ ligt. Een eenheid haal je bijvoorbeeld uit de cel en zet je in de kolomnaam.
 
 **Voorbeeld.** Op het werkblad `Na 1900` staan twee tabellen naast elkaar:
 *Blank glas* (kolommen B–G) en *Zwart glas* (kolommen I–N), met dezelfde
-kolomnamen. Op rij 3 staan `Tuindorp 't Lansink` en `Begraafplaats Soesterweg`
+kolomnamen. Zodoende staan op rij 3 `Tuindorp 't Lansink` en `Begraafplaats Soesterweg`
 naast elkaar, terwijl die niets met elkaar te maken hebben.
 
 **Waarom is dit een probleem?**
@@ -100,8 +100,8 @@ dataset in losse stukken is geknipt.
 
 **Voorbeeld.** De glaswaarnemingen staan verdeeld over drie tabbladen:
 `voor 1900`, `Na 1900` en `Datum onbekend`. De kolommen zijn niet overal
-gelijk: `Mon. nr.` heet op een ander tabblad `Monumentnr`, alleen `voor 1900`
-heeft een kolom `Dikte` en `Datum onbekend` heeft geen kolom `Datering`.
+gelijk: `Mon. nr.` heet op een ander tabblad `Monumentnr`, alleen tabblad `voor 1900`
+heeft een kolom `Dikte` en tabblad `Datum onbekend` heeft geen kolom `Datering`.
 
 **Waarom is dit een probleem?**
 
@@ -109,7 +109,7 @@ heeft een kolom `Dikte` en `Datum onbekend` heeft geen kolom `Datering`.
   zelf staat. Bij opslaan als CSV ben je die kwijt.
 - Wie alles samen wil bekijken, moet de tabbladen eerst samenvoegen. Door de
   verschillende kolommen gaat dat snel mis.
-  `voor 1900` of op `Na 1900`?
+- Ook dekken de categorieën van de tabbladen niet alle mogelijke waarnemingen. Hoort een waarneming uit het jaar 1900 op het tabblad `voor 1900` of op `Na 1900`?
 
 **Wat kun je beter doen?** Zet alle waarnemingen in één tabel met dezelfde
 kolommen. De periode volgt dan vanzelf uit de kolommen met de datering. Gebruik tabbladen alleen voor echt verschillende dingen, zoals
@@ -178,6 +178,7 @@ en maak die op.
   waarden.
 - Gebruik voor de betekenis van waarden een bestaande **referentielijst** of
   thesaurus (zie fout 12).
+- Voeg deze informatie desnoods toe als extra sheet in de spreadsheet, maar zorg er voor dat deze metadata niet staat in de sheet waar de data zich bevindt.
 
 **Wanneer is het geen probleem?** Uitleg is waardevol. Het gaat alleen om de
 plek: buiten de data, op een eigen tabblad of in een eigen bestand.
@@ -185,8 +186,7 @@ plek: buiten de data, op een eigen tabblad of in een eigen bestand.
 ### 6. Geen Unieke Identificatiecodes per rij
 
 **Voorbeeld.** De verschillende waarnemingen (rijen in de dataset) hebben geen Unieke Identificatiecode (UID). Er is wel de kolom `monumentnummer`. Maar één
-monument kan meerdere ruiten hebben, en panden zonder nummer heten `Woonhuis`,
-`Winkel` of `Restaurant (nu)`.
+monument kan meerdere ruiten (waarnemingen) hebben, en panden zonder nummer heten `Woonhuis`, `Winkel` of `Restaurant (nu)`.
 
 **Waarom is dit een probleem?**
 
