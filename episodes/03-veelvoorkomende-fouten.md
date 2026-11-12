@@ -175,7 +175,7 @@ en maak die op.
   databestand hoort.
 - Zet de uitleg van kolommen in een **data dictionary**: een apart tabblad of
   bestand met per kolom de naam, de betekenis, de eenheid en de toegestane
-  waarden.
+  waarden. We gaan hiermee verder in [deze sectie in hoofdstuk 4](04-kwaliteitscontrole.md#data-dictionary).
 - Gebruik voor de betekenis van waarden een bestaande **referentielijst** of
   thesaurus (zie fout 12).
 - Voeg deze informatie desnoods toe als extra sheet in de spreadsheet, maar zorg er voor dat deze metadata niet staat in de sheet waar de data zich bevindt.
