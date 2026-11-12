@@ -6,7 +6,7 @@ exercises: 0
 
 ::::::::::::::::::::::::::::::::::::::: objectives
 
-- Begrijpen waarom je spreadsheet data beter opslaat in universele bestandsformaten.
+- Begrijpen waarom je spreadsheet-data beter opslaat in universele bestandsformaten.
 - Data vanuit een spreadsheet exporteren naar een CSV-bestand.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -36,7 +36,7 @@ Hoe ingewikkelder een bestandsformaat, hoe groter de kans dat het over tientalle
 Het oude .xls-formaat wordt nu al door steeds minder programma’s goed ondersteund.
 
 Bewaar je analysedata daarom (ook) in een universeel, open en statisch formaat zoals CSV. 
-CSV is een plat tekstbestand waarin de kolommen door komma's worden gescheiden, vandaar 'comma separated values' of CSV. 
+CSV is een plat tekstbestand waarin de kolommen door komma's worden gescheiden, vandaar de naam 'comma separated values' of CSV. 
 
 Data in een CSV-bestand kan bovendien eenvoudig worden geïmporteerd in andere formaten en
 omgevingen, zoals SQLite, Python en R.

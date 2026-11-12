@@ -5,7 +5,7 @@ exercises: 20
 ---
 
 ::::::::::::::::::::::::::::::::::::::: objectives
-* Herkennen en voorkomen van veelvoorkomende opmaakfouten in spreadsheets
+* Herkennen en voorkomen van veelvoorkomende fouten in spreadsheets
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -15,7 +15,7 @@ exercises: 20
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
-De meest voorkomende fout in het gebruik van spreadsheetprogramma's is dat het een soort persoonlijk notitieboek wordt.
+Misschien wel de meest voorkomende fout in het gebruik van spreadsheetprogramma's is dat het een soort persoonlijk notitieboek wordt.
 Dat wil zeggen dat je gebruik maakt van commentaar, ruimtelijke indeling, highlights etc. om informatie over te brengen.
 Als mensen kunnen we deze zaken (meestal) interpreteren, maar computers bekijken informatie niet op dezelfde manier.
 
@@ -50,7 +50,7 @@ is het heel gemakkelijk om uiteindelijk een spreadsheet te krijgen die er heel a
 
 Om je analyses te kunnen reproduceren of te kunnen achterhalen wat je hebt gedaan, is het verstandig om het volgende doen:
 
-* Wijzig nooit de oorspronkelijke data. Maak een nieuw bestand met je opgeschoonde of geanalyseerde data.
+* Wijzig nooit de oorspronkelijke (ruwe) data. Maak een nieuw bestand met je opgeschoonde of geanalyseerde data.
 * Houd bij welke stappen je hebt uitgevoerd tijdens het opschonen of analyseren van de data. We raden aan dit te doen in een gewoon tekstbestand dat je in dezelfde map als het databestand bewaart.
 
 Pas deze principes toe tijdens de oefeningen van deze cursus.
@@ -74,8 +74,8 @@ We gaan een rommelige dataset bekijken en beschrijven hoe we deze zouden opschon
 1. Download de dataset door [hier te klikken](https://github.com/Digitaal-Erfgoed-Trainingen/Digitale_geletterdheid_WS1/raw/refs/heads/main/data/historisch-glas-in-gebouwen_messy.xlsx).
 2. Open de data in een spreadsheetprogramma (Excel of iets vergelijkbaars). Onder de tabel kun je zien dat er 3 tabbladen zijn: 'voor 1900', 'Na 1900' en 'Datum onbekend'.
 3. Jij bent nu verantwoordelijk voor dit project en wilt de data gaan analyseren.
-Bespreek samen met degene naast je wat er mis is met deze spreadsheet. 
-Bespreek ook welke stappen nodig zijn om de drie tabbladen op te schonen en alle data samen te voegen in één spreadsheet.
+Bespreek met degene naast je wat er mis is met deze spreadsheet. 
+Bespreek ook welke stappen nodig zijn om de drie tabbladen op te schonen en alle data samen te voegen tot één spreadsheet.
 
 **Belangrijk:** vergeet ons eerste advies niet: maak een nieuw bestand of tabblad voor de opgeschoonde data. Wijzig nooit de oorspronkelijke (ruwe) data.
 
