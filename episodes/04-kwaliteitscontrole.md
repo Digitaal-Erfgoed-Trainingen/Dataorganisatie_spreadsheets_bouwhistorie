@@ -17,8 +17,8 @@ exercises: 15
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Dataset
-Voor dit hoofdstuk gebruiken we de [historisch-glas-ingebouwen_kwaliteitscontrole.xlsx](https://github.com/Digitaal-Erfgoed-Trainingen/Dataorganisatie_spreadsheets_bouwhistorie/raw/refs/heads/main/data/historisch-glas-in-gebouwen_kwaliteitscontrole.xlsx) dataset.
-Download deze naar je computer.
+Voor dit hoofdstuk gebruiken we `historisch-glas-in-gebouwen_kwaliteitscontrole.xlsx`.
+[Volg hier de downloadinstructies](learners/setup.md#glas-in-gebouwen-kwaliteitscontrole-dataset).
 
 ## Datakwaliteit controleren
 
