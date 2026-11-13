@@ -1,18 +1,20 @@
 ---
 title: "Kwaliteitscontrole, referentielijsten & publieke thesauri"
-teaching: 20
-exercises: 15
+teaching: 25
+exercises: 25
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 - Hoe kan ik makkelijk de kwaliteit van data controleren in spreadsheets?
+- Hoe maak ik duidelijk wat ik met mijn data bedoel?
 - Hoe kan ik tijdens het invoeren van data de kwaliteit van de data waarborgen?
 - Hoe gebruik ik referentielijsten en publieke thesauri?
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
-- Data validatie gebruiken om datakwaliteit te waarborgen
 - Eenvoudige kwaliteitscontroles uitvoeren 
+- Een data dictionary gebruiken om de elementen van een dataset te definiëren en beschrijven
+- Data validatie gebruiken om datakwaliteit te waarborgen
 - Een referentielijst of publieke thesaurus gebruiken om expliciet te maken wat er met een waarde wordt bedoeld
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -48,15 +50,58 @@ Voor numerieke waardes kun je een snelle controle uitvoeren door de waardes van 
 Zo zie je snel of er gekke waardes tussen zitten (denk aan glas met een dikte van 1000 mm).
 :::
 
+## Data dictionary
+Een data dictionary (ook wel data codebook) definieert en beschrijft de elementen van je dataset, 
+zodat de data door iedereen (inclusief jezelf over 6 maanden) juist wordt geïnterpreteerd.
+
+Een data dictionary bevat typisch de volgende onderdelen:
+- Naam van de kolom (bijv. kolomnaam zoals customer_id of leeftijd)
+- Gegevenstype (bijv. tekst/string, geheel getal/integer, datum)
+- Lengte en formaat (bijv. maximaal 50 tekens, JJJJ-MM-DD)
+- Definitie (wat betekent dit veld precies in de praktijk?)
+- Toegestane waardes of restricties (bijv. alleen 'ja' of 'nee', of een getal groter dan 0)
+- Relaties (hoe koppelt dit veld aan tabellen of andere systemen?)
+
+::: challenge
+## Data dictionary
+Bekijk het tabblad `data dictionary`.
+
+1. Waarom is de beschrijving voor de kolom `twijfel` hier cruciaal? Is deze beschrijving wat je verwacht had?
+2. Voeg een rij toe aan de data dictionary voor de `Kleur` kolom.
+3. (Bonus) Voeg ook voor `Datering` de juist informatie toe aan de data dictionary. 
+
+:::: solution
+
+1: Het geeft aan over welke kolom de twijfel gaat. De twijfel zou anders natuurlijk op alles betrekking kunnen hebben, dus misschien had je wel iets anders verwacht.
+
+2 & 3: Zie onderstaande tabel met de data dictionary voor de `kleur` en `datering` kolom:
+
+| Naam kolom | Gegevenstype | Lengte | Formaat | Toegestane waardes | Definitie | Relaties |
+|---|---|---|---|---|---|---|
+| Kleur | string | | Meerdere kleuren gescheiden door ; | Blank, zwart, lichtgeel, grijs, paars, mat | De kleur van het glas | |
+| Datering | string | | Vrije tekst | | Het geschatte jaar of periode waarin het glas is gemaakt | |
+
+Zoals besproken in [Hoofdstuk 3: veelvoorkomende fouten](03-veelvoorkomende-fouten.md) is een vrije tekst veld voor datering
+misschien niet de meest handige manier.
+::::
+:::
+
+::: callout
+## Constraints in een database
+In een database kun je het type data, toegestane lengte, formaat, toegestane waardes allemaal forceren. Dit noem je een `constraint`.
+Je krijgt dan een foutmelding als je probeert data die niet aan de voorwaarden voldoet toe te voegen, zoals een ander datatype of.
+:::
+
+
 ## Data validatie
-Een typefout is snel gemaakt. Met data-validatie kun je dat voorkomen.
+Een foutje is snel gemaakt. Met data-validatie kun je dat voorkomen.
 Laten we naar een voorbeeld kijken.
 
 ::: instructor
 Voor sommige cursisten is dit gesneden koek. Voor anderen zal het heel lang duren om hier doorheen te klikken.
 Je kunt er daarom ook voor kiezen om dit te demonstreren zonder dat cursisten mee doen. 
 Het gaat er immers niet per se om dat cursisten uit hun hoofd data-validatie in spreadsheets kunnen toepassen na deze cursus,
-maar dat ze het principe snappen.
+maar dat ze het principe kennen.
 
 :::
 
