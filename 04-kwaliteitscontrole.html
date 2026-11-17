@@ -123,7 +123,7 @@
     <a id="search-button-nav" class="btn btn-primary" href="aio.html" role="button" aria-label="Zoeken op de Alles-Op-Één-Pagina">Zoeken op de Alles-Op-Één-Pagina</a>
   </div><!--/div.container-fluid -->
 </nav><aside class="col-md-12 lesson-progress"><div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" aria-label="Voortgang van de les">40%</div>
+    <div class="progress-bar incubator" role="progressbar" style="width: 37%" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100" aria-label="Voortgang van de les">37%</div>
   </div>
 </aside><div class="container">
       <div class="row">
@@ -247,6 +247,7 @@
       <div class="accordion-body">
         <ul><li><a href="#dataset">Dataset</a></li>
 <li><a href="#datakwaliteit-controleren">Datakwaliteit controleren</a></li>
+<li><a href="#data-dictionary">Data dictionary</a></li>
 <li><a href="#data-validatie">Data validatie</a></li>
 <li><a href="#referentielijsten-en-thesauri">Referentielijsten en thesauri</a></li>
         </ul></div><!--/div.accordion-body-->
@@ -354,7 +355,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Kwaliteitscontrole, referentielijsten &amp; publieke thesauri</h1>
-        <p>Laatst bijgewerkt op 2026-11-13 |
+        <p>Laatst bijgewerkt op 2026-11-17 |
 
         <a href="https://github.com/Digitaal-Erfgoed-Trainingen/Digitale_geletterdheid_WS1/edit/main/episodes/04-kwaliteitscontrole.md" class="external-link">Deze pagina bewerken <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -375,6 +376,7 @@
 <h3 class="card-title">Vragen</h3>
 <ul><li>Hoe kan ik makkelijk de kwaliteit van data controleren in
 spreadsheets?</li>
+<li>Hoe maak ik duidelijk wat ik met mijn data bedoel?</li>
 <li>Hoe kan ik tijdens het invoeren van data de kwaliteit van de data
 waarborgen?</li>
 <li>Hoe gebruik ik referentielijsten en publieke thesauri?</li>
@@ -385,8 +387,10 @@ waarborgen?</li>
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Leerdoelen</h3>
-<ul><li>Data validatie gebruiken om datakwaliteit te waarborgen</li>
-<li>Eenvoudige kwaliteitscontroles uitvoeren</li>
+<ul><li>Eenvoudige kwaliteitscontroles uitvoeren</li>
+<li>Een data dictionary gebruiken om de elementen van een dataset te
+definiëren en beschrijven</li>
+<li>Data validatie gebruiken om datakwaliteit te waarborgen</li>
 <li>Een referentielijst of publieke thesaurus gebruiken om expliciet te
 maken wat er met een waarde wordt bedoeld</li>
 </ul></div>
@@ -395,8 +399,9 @@ maken wat er met een waarde wordt bedoeld</li>
 </div>
 </div>
 <section><h2 class="section-heading" id="dataset">Dataset<a class="anchor" aria-label="anchor" href="#dataset"></a></h2>
-<hr class="half-width"><p>Voor dit hoofdstuk gebruiken we de <a href="https://github.com/Digitaal-Erfgoed-Trainingen/Dataorganisatie_spreadsheets_bouwhistorie/raw/refs/heads/main/data/historisch-glas-in-gebouwen_kwaliteitscontrole.xlsx" class="external-link">historisch-glas-ingebouwen_kwaliteitscontrole.xlsx</a>
-dataset. Download deze naar je computer.</p>
+<hr class="half-width"><p>Voor dit hoofdstuk gebruiken we
+<code>historisch-glas-in-gebouwen_kwaliteitscontrole.xlsx</code>. <a href="index.html#glas-in-gebouwen-kwaliteitscontrole-dataset">Volg hier
+de downloadinstructies</a>.</p>
 </section><section><h2 class="section-heading" id="datakwaliteit-controleren">Datakwaliteit controleren<a class="anchor" aria-label="anchor" href="#datakwaliteit-controleren"></a></h2>
 <hr class="half-width"><div id="filteren-als-snelle-datacontrole" class="callout challenge">
 <div class="callout-square">
@@ -455,9 +460,94 @@ waardes tussen zitten (denk aan glas met een dikte van 1000 mm).</p>
 </div>
 </div>
 </div>
+</section><section><h2 class="section-heading" id="data-dictionary">Data dictionary<a class="anchor" aria-label="anchor" href="#data-dictionary"></a></h2>
+<hr class="half-width"><p>Een data dictionary (ook wel data codebook) definieert en beschrijft
+de elementen van je dataset, zodat de data door iedereen (inclusief
+jezelf over 6 maanden) juist wordt geïnterpreteerd.</p>
+<p>Een data dictionary bevat typisch de volgende onderdelen: - Naam van
+de kolom (bijv. kolomnaam zoals customer_id of leeftijd) - Gegevenstype
+(bijv. tekst/string, geheel getal/integer, datum) - Lengte en formaat
+(bijv. maximaal 50 tekens, JJJJ-MM-DD) - Definitie (wat betekent dit
+veld precies in de praktijk?) - Toegestane waardes of restricties (bijv.
+alleen ‘ja’ of ‘nee’, of een getal groter dan 0) - Relaties (hoe koppelt
+dit veld aan tabellen of andere systemen?)</p>
+<div id="data-dictionary-1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Opdracht</span>
+<div id="data-dictionary-1" class="callout-inner">
+<h3 class="callout-title">Data dictionary</h3>
+<div class="callout-content">
+<p>Bekijk het tabblad <code>data dictionary</code>.</p>
+<ol style="list-style-type: decimal"><li>Waarom is de beschrijving voor de kolom <code>twijfel</code> hier
+cruciaal? Is deze beschrijving wat je verwacht had?</li>
+<li>Voeg een rij toe aan de data dictionary voor de <code>Kleur</code>
+kolom.</li>
+<li>(Bonus) Voeg ook voor <code>Datering</code> de juist informatie toe
+aan de data dictionary.</li>
+</ol></div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Toon de oplossing </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<p>1: Het geeft aan over welke kolom de twijfel gaat. De twijfel zou
+anders natuurlijk op alles betrekking kunnen hebben, dus misschien had
+je wel iets anders verwacht.</p>
+<p>2 &amp; 3: Zie onderstaande tabel met de data dictionary voor de
+<code>kleur</code> en <code>datering</code> kolom:</p>
+<table style="width:100%;" class="table"><colgroup><col width="14%"><col width="14%"><col width="14%"><col width="14%"><col width="14%"><col width="14%"><col width="14%"></colgroup><thead><tr><th>Naam kolom</th>
+<th>Gegevenstype</th>
+<th>Lengte</th>
+<th>Formaat</th>
+<th>Toegestane waardes</th>
+<th>Definitie</th>
+<th>Relaties</th>
+</tr></thead><tbody><tr><td>Kleur</td>
+<td>string</td>
+<td></td>
+<td>Meerdere kleuren gescheiden door ;</td>
+<td>Blank, zwart, lichtgeel, grijs, paars, mat</td>
+<td>De kleur van het glas</td>
+<td></td>
+</tr><tr><td>Datering</td>
+<td>string</td>
+<td></td>
+<td>Vrije tekst</td>
+<td></td>
+<td>Het geschatte jaar of periode waarin het glas is gemaakt</td>
+<td></td>
+</tr></tbody></table><p>Zoals besproken in <a href="03-veelvoorkomende-fouten.html">Hoofdstuk
+3: veelvoorkomende fouten</a> is een vrije tekst veld voor datering
+misschien niet de meest handige manier.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="constraints-in-een-database" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Uitgelicht</span>
+<div id="constraints-in-een-database" class="callout-inner">
+<h3 class="callout-title">Constraints in een database</h3>
+<div class="callout-content">
+<p>In een database kun je het type data, toegestane lengte, formaat,
+toegestane waardes allemaal forceren. Dit noem je een
+<code>constraint</code>. Je krijgt dan een foutmelding als je probeert
+data die niet aan de voorwaarden voldoet toe te voegen, zoals een ander
+datatype of.</p>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="data-validatie">Data validatie<a class="anchor" aria-label="anchor" href="#data-validatie"></a></h2>
-<hr class="half-width"><p>Een typefout is snel gemaakt. Met data-validatie kun je dat
-voorkomen. Laten we naar een voorbeeld kijken.</p>
+<hr class="half-width"><p>Een foutje is snel gemaakt. Met data-validatie kun je dat voorkomen.
+Laten we naar een voorbeeld kijken.</p>
 
 <ol style="list-style-type: decimal"><li>Selecteer de <code>Soort glas</code> kolom.</li>
 <li>Klik op <code>Gegevens</code> -&gt;
@@ -500,12 +590,12 @@ subcategorieën, of de zoekbalk gebruiken. Wat valt je op?</li>
 </ol></div>
 </div>
 </div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Toon de oplossing </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Toon de oplossing </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ul><li>
 <code>Prismategel</code> valt hier onder <code>artefacten</code>
@@ -551,7 +641,7 @@ om alle gegevens up te daten. De URL’s blijven onveranderd.</li>
 gestandaardiseerd is, kun je de termen in verschillende talen aan elkaar
 linken. Zo kan je gemakkelijk datasets over glas uit verschillende
 landen met elkaar vergelijken wat tot nieuwe inzichten kan leiden.</li>
-</ul><div id="callout2" class="callout">
+</ul><div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -628,7 +718,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>De template is door <a href="https://carpentries.org/" class="external-link">The Carpentries</a> beschikbaar gesteld onder de licentie <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a></p>
-        <p>Gemaakt met <a href="https://github.com/carpentries/sandpaper/tree/main" class="external-link">sandpaper (0.21.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a> en <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.3)</a></p>
+        <p>Gemaakt met <a href="https://github.com/carpentries/sandpaper/tree/main" class="external-link">sandpaper (0.21.2)</a>, <a href="https://github.com/carpentries/pegboard/tree/10238703362ff7cfc228cdd1d315590bc960e496" class="external-link">pegboard (0.8.0)</a> en <a href="https://github.com/carpentries/varnish/tree/" class="external-link">varnish (1.1.3)</a></p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -650,8 +740,8 @@ any links that you are not going to use.
   "url": "https://Digitaal-Erfgoed-Trainingen.github.io/Digitale_geletterdheid_WS1/04-kwaliteitscontrole.html",
   "identifier": "https://Digitaal-Erfgoed-Trainingen.github.io/Digitale_geletterdheid_WS1/04-kwaliteitscontrole.html",
   "dateCreated": "2026-10-19",
-  "dateModified": "2026-11-13",
-  "datePublished": "2026-11-13"
+  "dateModified": "2026-11-17",
+  "datePublished": "2026-11-17"
 }
 
   </script><script>
