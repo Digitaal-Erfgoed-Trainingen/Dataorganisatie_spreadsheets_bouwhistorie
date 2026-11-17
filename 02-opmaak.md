@@ -71,7 +71,7 @@ De belangrijkste regel is 'houd het netjes', dit komt neer op:
 
 We gaan een rommelige dataset bekijken en beschrijven hoe we deze zouden opschonen.
 
-1. Download de dataset door [hier te klikken](https://github.com/Digitaal-Erfgoed-Trainingen/Digitale_geletterdheid_WS1/raw/refs/heads/main/data/historisch-glas-in-gebouwen_messy.xlsx).
+1. We gebruiken `historisch-glas-in-gebouwen_messy.xlsx`. [Volg hier de downloadinstructies](learners/setup.md#messy-glas-in-gebouwen-dataset ).
 2. Open de data in een spreadsheetprogramma (Excel of iets vergelijkbaars). Onder de tabel kun je zien dat er 3 tabbladen zijn: 'voor 1900', 'Na 1900' en 'Datum onbekend'.
 3. Jij bent nu verantwoordelijk voor dit project en wilt de data gaan analyseren.
 Bespreek met degene naast je wat er mis is met deze spreadsheet. 

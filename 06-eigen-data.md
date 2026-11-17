@@ -38,7 +38,7 @@ Dat is niet de bedoeling van deze opdracht, maar is natuurlijk wel iets waar je 
 Scroll nog eens door de [veelvoorkomende fouten](03-veelvoorkomende-fouten.md) om te zien of er nog verbeterpunten zijn. 
 Schrijf ook dingen op die al goed zijn!
 2. Kun je met behulp van datavalidatie de toekomstige dataverzameling verbeteren? Zie [hoofdstuk 4: Kwaliteitscontrole, referentielijsten & publieke thesauri](04-kwaliteitscontrole.md)
-3. Kun je met het gebruik van referentielijsten/thesauri je dataset minder foutgevoelig maken en bruikbaarder maken voor anderen? Zie [hoofdstuk 4: Kwaliteitscontrole, referentielijsten & publieke thesauri](04-kwaliteitscontrole.md)
+3. Kun je met het gebruik van een data dictionary, referentielijsten of thesauri je dataset minder foutgevoelig maken en bruikbaarder maken voor anderen? Zie [hoofdstuk 4: Kwaliteitscontrole, referentielijsten & publieke thesauri](04-kwaliteitscontrole.md)
 4. Exporteer de data naar een tekstbestand, zoals CSV (*comma-separated values*). Zie [hoofdstuk 5: Data exporteren](05-export.md).
 5. (Bonus) Laad het tekstbestand (zoals CSV) in je favoriete database-software, programmeertaal of analyse-omgeving.
 
