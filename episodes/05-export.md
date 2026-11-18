@@ -34,6 +34,7 @@ Datums zijn een bekend voorbeeld: die kunnen bij het uitwisselen tussen versies 
 - Voor de lange termijn is eenvoud veiliger. 
 Hoe ingewikkelder een bestandsformaat, hoe groter de kans dat het over tientallen jaren lastig te openen is. 
 Het oude .xls-formaat wordt nu al door steeds minder programma’s goed ondersteund.
+- Nog een argument om geen excel bestanden te gebruiken is dat het geen *preferred format* is. Om het bestand te kunnen gebruiken zit een gebruiker vast aan specifieke software waarvan het niet gezegd is dat iedereen daar een licentie van heeft en dus kan gebruiken. Wanneer met data wordt gewerkt en vooral wanneer deze wordt gepubliceerd is het aan te raden *preferred* formats te gebruiken. Dat zijn bestandstypen waarvan het vertrouwen is dat deze op de langere termijn bruikbaar, toegankelijk en duurzaam zijn. Het is te adviseren hierbij te kijken naar de richtlijnen van [DANS](https://dans.knaw.nl/nl/bestandsformaten/), het nationale expertisecentrum voor onderzoeksdata.
 
 Bewaar je analysedata daarom (ook) in een universeel, open en statisch formaat zoals CSV. 
 CSV is een plat tekstbestand waarin de kolommen door komma's worden gescheiden, vandaar de naam 'comma separated values' of CSV. 
