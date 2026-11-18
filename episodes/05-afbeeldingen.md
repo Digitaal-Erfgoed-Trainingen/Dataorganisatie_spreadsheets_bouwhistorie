@@ -95,7 +95,7 @@ Wanneer we kijken naar glas in monumenten, zien we dat sommige eigenschappen dir
 
 Dit maakt het conceptueel uitdagend, omdat eigenschappen van het erfgoedobject en eigenschappen van de afbeelding gemakkelijk door elkaar kunnen lopen. Het is daarom belangrijk om een duidelijk onderscheid te maken tussen beide soorten eigenschappen.
 
-Daarbij moet worden opgemerkt dat de minimale set eigenschappen die bij een afbeelding moet worden vastgelegd, sterk afhankelijk is van het platform waarop de afbeelding wordt gepubliceerd.
+Daarbij moet worden opgemerkt dat de minimale set eigenschappen die bij een afbeelding moet worden vastgelegd sterk afhankelijk is van het platform waarop de afbeelding wordt gepubliceerd.
 
 
 ::: challenge
