@@ -44,6 +44,6 @@ sandpaper::serve()
 Bekijk ook de [Carpentries Workbench](https://carpentries.github.io/workbench/#usage) instructies.
 
 ## Beheerders
-Maurice de Kleijn ([m.dekleijn@cultureelerfgoed.nl](mailto:m.dekleijn@cultureelerfgoed.nl))
-Sven van der Burg
-Olivier Wieringa
+Maurice de Kleijn ([m.dekleijn@cultureelerfgoed.nl](mailto:m.dekleijn@cultureelerfgoed.nl)), 
+Sven van der Burg &
+Olivier Wieringa.
