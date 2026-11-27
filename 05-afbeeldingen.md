@@ -49,7 +49,7 @@ Bekijk de bovenstaanden beeldbanken of zoek een beeldbank die je zelf interessan
 
 1. Welke eigenschappen van afbeeldingen worden er in de verschillende beeldbanken gedocumenteerd?
 2. Welk van deze eigenschappen zijn generiek en welke zijn specifiek voor het erfgoedobject?
-3. Wat zou ieder afbeeldingen minimaal geregistreed moeten hebben?
+3. Wat zou iedere afbeeldingen minimaal geregistreerd moeten hebben?
 
 :::: solution
 
@@ -101,7 +101,7 @@ Daarbij moet worden opgemerkt dat de minimale set eigenschappen die bij een afbe
 ::: challenge
 
 ## Eigenschappen van afbeeldingen 
-Erfgoedvrijwilligers/glasexperts Van der Tak en Van Rest hebben een *proof of concept* opgezet voor het documeteren van glas in gebouwen en maken hierbij ook foto's, een zeer welkome collectie voor zowel vrijwilligers als professionals. Ze hebben hiervoor het volgende bestand opgezet.
+Erfgoedvrijwilligers/glasexperts Van der Tak en Van Rest hebben een *proof of concept* opgezet voor het documenteren van glas in gebouwen en maken hierbij ook foto's, een zeer welkome collectie voor zowel vrijwilligers als professionals. Ze hebben hiervoor het volgende bestand opgezet.
 [historisch-glas-in-gebouwen_real-life_glasobject.xlsx](https://github.com/Digitaal-Erfgoed-Trainingen/Dataorganisatie_spreadsheets_bouwhistorie/raw/refs/heads/main/data/historisch-glas-in-gebouwen_real-life_glasobject.xlsx)
 
 1. Welke eigenschappen in hun spreadsheet gaat specifiek over de afbeelding?
@@ -121,7 +121,7 @@ Afhankelijk van het platform waar de foto's uiteindelijk gepubliceerd zouden gaa
 :::::::::::::::::::::::::::::::::::::::::  callout
 **International Image Interoperability Framework**
 
-Vanuit het Netwerk Digitaal Erfgoed wordt gestimuleerd om te werken met het **International Image Interoperability Framework** (IIIF). Dit is een open standaard waarmee de online toegankelijkheid van gedigitaliseerde erfgoed objecten makkelijker wordt. IIIF wordt gebruikt door een brede groep erfgoed instituen zoals bibliotheken, archieven, musea, universiteiten, softwarebedrijven en ontwikkelaars. Meer informatie over IIIF is te vinden via de website van het [NDE](https://netwerkdigitaalerfgoed.nl/iiif/).
+Vanuit het Netwerk Digitaal Erfgoed wordt gestimuleerd om te werken met het **International Image Interoperability Framework** (IIIF). Dit is een open standaard waarmee de online toegankelijkheid van gedigitaliseerde erfgoed objecten makkelijker wordt. IIIF wordt gebruikt door een brede groep erfgoed instituten zoals bibliotheken, archieven, musea, universiteiten, softwarebedrijven en ontwikkelaars. Meer informatie over IIIF is te vinden via de website van het [NDE](https://netwerkdigitaalerfgoed.nl/iiif/).
 
 :::::::::::::::::::::::::::::::::::::::::
 
