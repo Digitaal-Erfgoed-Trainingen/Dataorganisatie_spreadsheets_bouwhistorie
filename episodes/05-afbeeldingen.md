@@ -45,11 +45,11 @@ zie: <https://beeldbank.cultureelerfgoed.nl>
 
 ::: challenge
 ## Metadata van afbeeldingen
-Bekijk de bovenstaanden beeldbanken of zoek een beeldbank die je zelf interessant vindt. 
+Bekijk de bovenstaande beeldbanken of zoek een beeldbank die je zelf interessant vindt. 
 
 1. Welke eigenschappen van afbeeldingen worden er in de verschillende beeldbanken gedocumenteerd?
 2. Welk van deze eigenschappen zijn generiek en welke zijn specifiek voor het erfgoedobject?
-3. Wat zou iedere afbeeldingen minimaal geregistreerd moeten hebben?
+3. Wat zou iedere afbeelding minimaal geregistreerd moeten hebben?
 
 :::: solution
 
