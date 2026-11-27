@@ -49,7 +49,7 @@ Bekijk de bovenstaanden beeldbanken of zoek een beeldbank die je zelf interessan
 
 1. Welke eigenschappen van afbeeldingen worden er in de verschillende beeldbanken gedocumenteerd?
 2. Welk van deze eigenschappen zijn generiek en welke zijn specifiek voor het erfgoedobject?
-3. Wat zou ieder afbeeldingen minimaal geregistreed moeten hebben?
+3. Wat zou iedere afbeeldingen minimaal geregistreed moeten hebben?
 
 :::: solution
 
